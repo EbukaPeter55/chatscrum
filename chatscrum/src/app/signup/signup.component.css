@@ -1,0 +1,473 @@
+.body-1 {
+    background: #26A69A;
+}
+
+
+.container {
+    background: #26A69A;
+    padding-left: 60px;
+     }
+
+/*Navigation bar styling */
+.header-left img{
+margin-top: 3.33%;
+bottom: 92.56%;
+}
+
+.header-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: wrap; 
+  align-items: center;
+}
+
+.header-right li {
+font-family: 'Roboto', sans-serif;
+font-size: 14px;
+font-weight: bold;
+line-height: 17px;
+list-style: none;
+color: #FFFFFF;
+display: flex;
+align-items: center;
+margin-right: 25px;
+margin-top: -30px;
+
+}
+.header-right button {
+    background: #4DFFD4;
+    border-radius: 4px;
+    width: 165px;
+    height: 38px;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    font-weight: bold;
+    margin-right: 100px;
+    margin-top: -30px;
+    transition: color 2s ease, transform 1s ease;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.header-right button:hover {
+    transform: translateY(-6px)
+
+}
+/*End of navigation bar styling*/
+
+ /*form fields styling */    
+ .container h2 {
+     width: 595px;
+     height: 41px;
+     left: 100px;
+     top: 137px;
+     font-size: 36px;
+     line-height: 43px;
+     margin-top: 60px;
+     color: #FFFFFF;
+     font-family: 'Roboto', sans-serif;
+
+ }
+ input[type=email], [type=text], [type=password] {
+     width: 595px;
+     height: 38px;
+     left: 100px;
+     top: 229px;
+     background: rgba(255, 255, 255, 0.2);
+     border-radius: 4px;
+     border: none;
+     margin-bottom: 25px;
+ }
+
+ /*Styling the placeholder */
+ ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    padding-left: 10px;
+    font-style: italic;
+    font-family: 'Roboto', sans-serif;
+
+  }
+  input[type="email"]::-webkit-input-placeholder {
+    font-weight: bold;
+    color: black;
+    font-style: normal;
+  }
+
+  input[type="submit"]{
+    font-weight: bold;
+    color: black;
+    font-style: normal;
+  }
+ .acc-type {
+    color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    width: 165px;
+    height: 38px;
+    margin-bottom: 25px;
+ }
+.acc-type span {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.8);
+}
+.acc-type button {
+    background: #4DFFD4;
+    color: rgba(0, 0, 0, 0.8);
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    width: 53px;
+    height: 28px;
+    border-radius: 6px;
+    margin-left: -14px;
+     border: none;
+}
+
+.acc-type .own {
+    margin-right: -10px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+ .lab {
+    font-family: 'Roboto', sans-serif;
+     font-size: 14px;
+     line-height: 17px;
+     display: flex;
+     align-items: center;
+     color: #4DFFD4;
+ }
+ input[type=submit] {
+ width: 166px;
+ height: 38px;
+ background: #4DFFD4;
+ border-radius: 4px;
+ cursor: pointer;
+ transition: color 2s ease, transform 1s ease;
+ border: none;
+}
+input[type=submit]:hover {
+ transform: translateY(-6px)   
+}
+
+.container .instr {
+ color: #FFFFFF;
+ font-size: 14px;
+ line-height: 17px;
+ margin-bottom: 138px;
+ font-family: 'Roboto', sans-serif;
+}
+
+.container .instr span {
+    color: #4DFFD4;
+    
+}
+
+/*Styling for Footer */
+ .container-3 {
+     height: 60px;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+    background: #FFFFFF;
+    align-items: center;
+}
+.container-3 .chatscr-3 {
+padding-left: 100px;
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 14px;
+color: rgba(0, 0, 0, 0.5);
+}
+
+.container-3 .supp {
+    font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 14px;
+color: rgba(0, 0, 0, 0.5);
+padding-right: 100px;
+
+}
+
+.container-3 .supp span {
+    margin-left: 20px;
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button button {
+    background: #4DFFD4;
+    border-radius: 4px;
+    width: 125px;
+    height: 38px;
+    font-size: 12px;
+    line-height: 17px;
+    color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    font-weight: bold;
+    margin-right: 120px;
+    margin-top: -30px;
+    transition: color 2s ease, transform 1s ease;
+    border: none;
+    font-family: 'Roboto', sans-serif;   
+}
+.button button:hover {
+    background-color: #FFFFFF;
+}
+.button button:after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+
+.button p{
+    font-size: 12px;
+    font-family: 'Roboto';
+    line-height: 14px;
+    width: 95px;
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.8);
+    margin-right: 35px;
+    margin-bottom: 39px;
+    
+}
+
+/*Responsive styling*/
+/*Desktop screen */
+@media only screen and (min-width:600px){
+    .button {
+        display: none;
+    }
+    .container-2 {
+        display: none;
+    }
+}
+
+@media only screen and (min-width:380px) and (max-width: 600px){
+    .body-1 {
+     max-width: 100%;
+     width: 400px;
+    }
+
+    input[type=email], [type=text], [type=password] {
+        width: 350px;
+        height: 38px;
+        left: 100px;
+        top: 229px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 4px;
+        border: none;
+        margin-bottom: 25px;
+    }
+    .header-left img{
+        width: 130px;
+        height: 50px;
+    }
+    .button {
+        display: none;
+    }
+.container-2 {
+    display: none;
+}
+.header-right li {
+    
+}
+.header-right button{
+    margin-right: -30px;
+    width: 120px;
+    
+}
+.container-3 {
+    width: 500px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   background: #FFFFFF;
+   align-items: center;
+}
+.container-3 .chatscr-3 {
+padding-left: 50px;
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 14px;
+color: rgba(0, 0, 0, 0.5);
+}
+
+.container-3 .supp {
+   font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 14px;
+color: rgba(0, 0, 0, 0.5);
+
+}
+
+.container-3 .supp span {
+   
+}
+
+}
+
+/*Iphone x screen */
+@media screen and (max-width:375px) { 
+    .body-1 {
+        width: 375px;
+        height: 760px;
+        max-width: 375px;
+        max-height: 760px;
+        left: 0px;
+        top: 0px;
+    }
+
+.header-left img{
+    width: 150px;
+    height: 30px;
+    padding-top: 20px;
+    }
+    .container {
+        max-width: 100%;
+        width: 100%;
+        padding-left: 30px;
+        margin: auto;
+        padding: auto;
+        
+         }
+         .container .instr {
+             font-size: 12px;
+             width: 343px;
+height: 28px;
+             
+         }
+         .header-right button {
+             width: 125px;
+             height: 38;
+         }
+         .container h2 {
+            font-size: 24px;
+            line-height: 29px;
+         }
+         .lab {
+             margin-bottom: 6px;
+         }
+         
+         input[type=email], [type=text], [type=password] {
+            width: 343px;
+            margin: auto;
+            height: 38px;
+            left: 16px;
+            margin-bottom: 25px;
+        }
+          input[type=submit], .instr{
+          
+          }
+    
+        .header-right {
+            display: flex;
+            flex-direction: row;
+            justify-content: flext-start;
+            flex-wrap: wrap; 
+            align-items: center;
+          }
+          
+    .header-right button {
+        background: #4DFFD4;
+        border-radius: 4px;
+        width: 101px;
+        height: 34px;
+        font-size: 14px;
+        line-height: 17px;
+        color: rgba(0, 0, 0, 0.8);
+        text-align: center;
+        font-weight: bold;
+        margin-right: 20px;
+    
+
+        transition: color 2s ease, transform 1s ease;
+        border: none;
+        font-family: 'Roboto', sans-serif;
+}
+    .header-right li {
+    font-size: 12px;
+    line-height: 14px;
+    margin-left: 100px;
+    margin-right: 8px;
+}
+/*footer*/
+.container-3 {
+    display: none;
+}
+.container-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFFFFF;
+    margin-top: 160px;
+    height: 52px;
+    border:none;
+    width: 395px;
+    
+}
+.container-2 .chatscr {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    color: rgba(0, 0, 0, 0.5);
+    padding-left: 22px;
+}
+
+.container-2 .supp {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    color: rgba(0, 0, 0, 0.5);
+    padding-right: 19px;
+}
+
+
+
+
+  }
+      
+

@@ -1,0 +1,339 @@
+.container {
+    width: 994px;
+    height: 731px;
+    display: flex;
+    flex-direction: row;
+}
+
+/*Styling for left column */
+.left-column {
+    width: 252px;
+    height: 50px;
+    max-height: 40px;
+}
+
+.left-column .left-head {
+    width: 252px;
+    height: 42px;
+    display: flex;
+    flex-direction: row;
+    background: rgba(0, 0, 0, 0.1);
+}
+.left-head img {
+    width: 22px;
+    height: 22px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.left-head p {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 16px;
+color: #26A69A;
+margin-left: 10px;
+margin-top: 10px;
+margin-bottom: -3px;
+
+}
+.left-head  p div {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: normal;
+font-size: 10px;
+line-height: 12px;
+color: #333333;
+margin-left: 1px;
+margin-top: -3px;
+}
+/*First sprint styling */
+.spr-91 {
+    width: 212px;
+    height: 53px;
+    background: #FFFFFF;
+    border: 2px solid #26A69A;
+    border-radius: 5px;
+    margin: 20px 0px 0px 20px;
+
+}
+.spr-91 p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    color: rgba(0, 0, 0, 0.8);
+    margin-left: 10px;
+}
+.spr-91 p div {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 5px;
+
+}
+/*Second sprint styling */
+.spr-90 {
+    width: 212px;
+    height: 53px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin: 10px 0px 0px 20px;
+
+}
+
+.spr-90 p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    color: rgba(0, 0, 0, 0.8);
+    margin-left: 10px;
+}
+.spr-90 p div {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 5px;
+
+}
+
+/*Styling for main column */
+.main-column {
+    width: 742px;
+    height: 731px;
+    background: #FFFFFF;
+}
+.main-column h4 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;    
+    color: #26A69A;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.first .work {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: -12px;
+    
+}
+.first .work span {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-left: 5px;
+    margin-bottom: 3px;
+    
+}
+.first .stat {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;    
+    color: rgba(0, 0, 0, 0.5);
+    margin-left: 20px;
+}
+.first .stat span {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #4DFFD4;
+    margin-left: 20px;
+}
+.first .sea {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;    
+    color: rgba(0, 0, 0, 0.8);
+    margin-left: 20px;    
+    margin-top: -5px;
+    width: 622px;
+    height: 17px;
+}
+
+/*Second*/
+.second .work {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-left: 20px;
+    margin-top: 40px;
+    margin-bottom: -12px;
+    
+}
+.second .work span {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-left: 5px;
+    margin-bottom: 3px;
+    
+}
+.second .stat {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;    
+    color: rgba(0, 0, 0, 0.5);
+    margin-left: 20px;
+}
+.second .stat span {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FF4D4D;
+    margin-left: 20px;
+}
+.second .sea {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;    
+    color: rgba(0, 0, 0, 0.8);
+    margin-left: 20px; 
+    margin-top: -5px;   
+    width: 622px;
+    height: 50px;
+}
+/*third */
+.third .work {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-left: 20px;
+    margin-top: 40px;
+    margin-bottom: -12px;
+    
+}
+.third .work span {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-left: 5px;
+    margin-bottom: 3px;
+    
+}
+.third .stat {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;    
+    color: rgba(0, 0, 0, 0.5);
+    margin-left: 20px;
+}
+.third .stat span {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #4DFFD4;
+    margin-left: 20px;
+}
+.third .sea {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;    
+    color: rgba(0, 0, 0, 0.8);
+    margin-left: 20px;    
+    margin-top: -5px;
+    width: 622px;
+    height: 33px;
+}
+
+/*fifth */
+.fifth .work {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-left: 20px;
+    margin-top: 6px;
+    margin-bottom: -12px;
+    
+}
+.fifth .work span {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-left: 5px;
+    margin-bottom: 3px;
+    
+}
+.fifth .stat {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;    
+    color: rgba(0, 0, 0, 0.5);
+    margin-left: 20px;
+}
+.fifth .stat span {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #4DFFD4;
+    margin-left: 20px;
+}
+.fifth .sea {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;    
+    color: rgba(0, 0, 0, 0.8);
+    margin-left: 20px;    
+    margin-top: -5px;
+    width: 622px;
+    height: 44px;
+    
+}
