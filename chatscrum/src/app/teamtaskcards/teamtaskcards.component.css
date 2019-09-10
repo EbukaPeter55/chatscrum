@@ -4,6 +4,9 @@ body{
 img{
     max-width: 100%
 }
+a{
+  text-decoration: none;
+}
 li{
   list-style: none;
 }
@@ -343,6 +346,8 @@ margin-top: 14px;
 .main_wrapper .home_wrapper .left-body{
     flex: 3;
     padding: 50px 10px;
+    /*Specify whether the modal wiil only be displayed inside the left boyd or the full screen */
+    /*position: relative;*/
 }
 .main_wrapper .home_wrapper .left-body .cards{
   margin-top: 20px;
@@ -447,29 +452,42 @@ margin-top: 14px;
        justify-content: stretch;
        align-items: flex-start;
    } 
-  .cards > div{
+  .cards .card {
        margin: 10px;
        max-width: 200px;
+       min-width: 180px;
        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
        background: rgba(255, 255, 255, 0.5);
        border-radius: 10px;
        border-top: 10px solid #59BB1E;
        align-self: flex-start;
        padding: 10px;
+       background: #fff;
+       flex: 1;
     } 
-    .card > div > div{
-      width: 100%;
+    .cards .card .inner-card{
       box-sizing: border-box;
-      background: #FFFFFF;
       border: 1px solid rgba(0, 0, 0, 0.1);
-      padding: 10px;
+      padding: 8px;
       box-sizing: border-box;
       border-radius: 5px;
-      margin-bottom: 20px;
       box-shadow: 0px 5px 10px rgba(0,0,0,.3);
-      position: relative;
+      margin-bottom: 12px;
+      background: #fff;
+      /*position: relative;*/
     }
-     .card .badge{
+    .cards .card  .title{
+      text-align: center;
+      text-transform: capitalize;
+    }
+    .cards .card .des{
+      font-size: 14px;
+      color: rgba(0, 0, 0, 0.8);
+       min-height: 50px;
+    }
+
+    /*Notification badge*/
+    .cards .card .badge{
         height: 23px;
         width: 23px;
         font-size: 10px;
@@ -478,702 +496,206 @@ margin-top: 14px;
         text-align: center;
         padding: 5px;
         position: absolute;
-        top: -10px;
-        left: -10px;
+        top: -8px;
+        left: -8px;
         border-radius: 100%;
         box-sizing: border-box;
      }
-    .card > div h4{
-      text-align: center;
+    .cards .card  .img{
+      width: 100%;
+      margin-bottom: 8px;
     }
-    .card > div > .inner-card p{
-      font-family: 'Roboto';
-      font-size: 14px;
-      color: rgba(0, 0, 0, 0.8);
+    .cards .card  .img img{
+      max-width: 100% !important;
     }
-    .card > div > div img{
-       width: 13px;
-       height: 13px;
-       cursor: pointer;
-       padding-left: 5px;
-    }
-    .card .action{
+    .cards .card .action{
       display: flex;
       justify-content: space-between;
     }
-    .card .action li{
-      margin: 0px 5px;
+    .cards .card .action li{
+      margin: 0px 5px; 
+      box-sizing: border-box;
     }
-
-   /*Styling for the edit modal */
-   .card .card-1 .inner-card .edit{
-       display: none;
-       
-   }
-   .edit {
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    left: 0;
-    top: 0;
-   }
-    .edit-content {
-    width: 621px;
-    height: 309px;
-    background: #FFFFFF;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-    left: 15%;
-    right: 20%;
-    top: 6%;
-    position: relative;
-    z-index: 1; /* Sit on top */
-   }
-     
-    .edit .edit-content .navbar {
-        background: rgba(0, 0, 0, 0.1);
-        width: 621px;
-        height: 42px;
-        margin-right: 5px;
-                
-   }
-    .edit .edit-content .navbar .nav-element{
-       margin-top: -2px;
-   }
-   .edit-content .navbar img {
-    width: 22px;
-    height: 22px;
-}
-   
-   /* Modal */
-
-.modal {
-    display: none; /* Hidden by default */
-    position: absolute; /* Stay in place */
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    z-index: 99999999;
-  }
-  .modal .modal-content {
-      border-radius: 10px;
-      max-width: 80%;
-      height: 70vh;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      overflow-y: scroll;
-      overflow-x: hidden;
-      z-index: 1; /* Sit on top */
-  }
-  .modal .modal-content .container {
-      width: 100%;
-      padding: 20px;
-      display: flex;
-      flex-direction: row;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;      
-  }
- 
-  .container .left .card-left {
-    padding: 10px;
-    background: #FFFFFF;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    max-width: 212px;
-    height: 240px;    
-    flex: 1;
-        
-  }
-  .container .left .card-left p{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 16px;
-    color: rgba(0, 0, 0, 0.8);
-  }
-  .container .left .card-left img {
-      width: 100%;
-      height: auto;
-      margin-top: 15px;
-  }
-  .container .modal-content .main-content {
-      flex: 3;
-      border: 1px solid red;
-      margin-left: 20px; 
-  }
-  .container .modal .main-content h4 {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    color: #26A69A;
-    text-align: center;
-  }
-  .modal .main-content .content .write-up{
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      margin-bottom: 50px;
-  }
-  .modal .main-content .content .write-up .connector{
-      height: 35px;
-      width: 35px;
-      border-radius: 100%;
-      background: #4DFFD4;
-      margin-right: 10px;
-  }
-  .modal .main-content .content .write-up .timeline:before {
-      content: " ";
-      position: absolute;
-      left: -27px;
-      top: 38px;
-      height: 100px;
-      width: 1px;
-      background: #ccc;
-  }
-  .modal .main-content .content .write-up .timeline{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-  }
-   .modal .main-content .content .write-up .timeline p{
-      font-weight: 600;
-      font-size: 12px;
-   }
-    .modal .main-content .content .write-up .timeline .by{
-      font-size: 12px;
-      font-weight: bold;
+    .cards .card .action li span{
+      padding-right: 5px;
     }
-     .modal .main-content .content .write-up .timeline  .dev{
-      margin: 5px 0px;
+     .cards .card .action li img{
+        height: 15px;
+        width: 15px;
+        cursor: pointer;
      }
-    .modal .main-content .content .write-up .timeline  .stat{
-      display: flex;
-      font-weight: normal;
-    }
-    .modal .main-content .content .write-up .timeline .stat > p{
-      margin: 0px 5px;
-    }
-  /* Modal Content */
-.modal-content {
-    background-color: #fefefe;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-  }
-  
-  /* The Close Button */
-  .close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  /*End of modal styling */
 
-   /*Styling for lower inner card */
-   .card .card-1 .inner-card-2 {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    width: 212px;
-    height: 218px;
-    background: #FFFFFF;
-    border: 1px solid rgba(144, 255, 76, 0.25);
-    border-radius: 5px;
-    margin-top: 20px;
-    margin-left: 10px;
-   }
-   .card .card-1 .inner-card-2 p {
-    width: 192px;
-    height: 165px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 16px;
-    margin-left: 9px;
-    color: rgba(0, 0, 0, 0.8);
-   }
-   .card .card-1 .inner-card-2 div{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 11px;
-    line-height: 13px;
-    color: rgba(0, 0, 0, 0.5);
-    margin-left: 9px;
-    margin-top: -35px;  
-   }
-   .card .card-1 .inner-card-2 .pen {
-    width: 13px;
-    height: 13px;
-    margin-left: 10px;       
-    cursor: pointer;
-}
-.card .card-1 .inner-card-2 div .cop {
- width: 13px;
- height: 13px;
- margin-left: 40px;    
- cursor: pointer;
- 
-}
-.card .card-1 .inner-card-2 div .mov {
- width: 16px;
- height: 16px;
- margin-left: 15px; 
- cursor: pointer;
-}
+/*STYLING THE MODAL*/
 
-   /*Styling for second card */
-   .card .card-2 {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    width: 232px;
-    height: 1091px;
-    background: rgba(255, 255, 255, 0.5);
-    border-radius: 10px;
-    border-top: 10px solid #59BB1E;
-    
-    
-}
-.card .card-2 h4 {
-    text-align: center;
-    font-style: normal;
-     font-weight: bold;
-     font-size: 14px;
-     line-height: 16px;
-     color: #333333;
-}
-.card .card-2 .card-2-inner {
- box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
- width: 212px;
- height: 170px;
- background: #FFFFFF;
- border: 1px solid rgba(144, 255, 76, 0.25);
- border-radius: 5px;
- margin-left: 10px;
-}
+/*The overlay is made global so other components can make use of it*/
 
-.card .card-2 .card-2-inner p {
- font-style: normal;
- font-weight: normal;
- font-size: 14px;
- font-family: 'Roboto';
- line-height: 16px;
- margin-left: 9px;
- color: rgba(0, 0, 0, 0.8);
- width: 192px;
- height: 115px;
-}
-.card .card-2 .card-2-inner div{
- font-style: normal;
- font-weight: normal;
- font-size: 11px;
- line-height: 13px;
- color: rgba(0, 0, 0, 0.5);
- margin-left: 9px;
- margin-top: -14px;
-}
-.card .card-2 .card-2-inner .pen {
-    width: 13px;
-    height: 13px;
-    margin-left: 10px;       
-    cursor: pointer;
-}
-/*modal styling */
 .overlay {
-  position: absolute;
+  position: fixed;
   top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  width: 100%;
+  height: 100%;
   background: rgba(0, 0, 0, 0.5);
-  transition: opacity 200ms;
+  transition: opacity .5s;
+  z-index: 2;
+}
+.hidden.overlay{
   visibility: hidden;
   opacity: 0;
+  transition: opacity .5s;
 }
-.overlay .cancel {
+
+/*Modal styling proper*/
+.main_wrapper .card .modal{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 900px !important;
+    border-radius: 10px;
+    background-color: #fff;
+    height: 75vh;
+    overflow: hidden;
+    z-index: 5;
+    box-sizing: border-box;
+    transition: .3s ease-out;
+}
+.hidden.modal{
+  visibility: hidden;
+  opacity: 0;
+  transition: .3s ease-out;
+  transform: translate(-50%, -40%) !important;
+}
+.main_wrapper .card .modal .cancel {
     position: absolute;
-    width: 100%;
-    height: 100%;
-    cursor: default;
+     right: 8px;
+     top: 5px;
+     cursor: pointer;
+     font-size: 25px;
+     text-shadow: 1px 1px 1px rgba(0,0,0,.05);
+     color: #aaa;
+     height: 30px;
+     width: 30px;
+     border: 1px solid #eee;
+     border-radius: 100%;
+     padding: 0px 0px 5px 0px;
+     box-sizing: border-box;
+     text-align: center;
+     transition: .5s;
   }
-  
-  .overlay:target {
-    visibility: visible;
-    opacity: 1;
-  }
-
-  
-  /*End of modal styling */
- .edit .edit-content {
-    display: none;
-}
-.card .card-2 .card-2-inner div .cop {
- width: 13px;
- height: 13px;
- margin-left: 40px;    
- cursor: pointer;
-}
-.card .card-2 .card-2-inner div.click-up span {display: none; width: 40px; background:black; color: #FFFFFF; }
-   .card .card-2 .card-2-inner div.click-up:hover span {display: block; }
-.card .card-2 .card-2-inner div .mov {
- width: 16px;
- height: 16px;
- margin-left: 15px; 
-
+.main_wrapper .card .modal .cancel:hover{
+  border-color: #aaa;
+  color: #222;
+  transition: .5s;
 }
 
-
-.card .card-2 .card-2-inner-2 {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    width: 212px;
-    height: 69px;
-    background: #FFFFFF;
-    border: 1px solid rgba(144, 255, 76, 0.25);
-    border-radius: 5px;
-    margin-top: 20px;
-    margin-left: 10px;
-   }
-   .card .card-2 .card-2-inner-2 p {
-    font-style: normal;
-    font-weight: normal;
-    font-family: 'Roboto';
-    font-size: 14px;
-    line-height: 16px;
-    margin-left: 9px;
-    margin-top: 7px;
-    color: rgba(0, 0, 0, 0.8);
-   }
-   .card .card-2 .card-2-inner-2 div {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 11px;
-    line-height: 13px;
-    color: rgba(0, 0, 0, 0.5);
-    margin-left: 9px;
-    margin-top: 22px;   
-   }
-   .card .card-2 .card-2-inner-2 .pen {
-    width: 13px;
-    height: 13px;
-    margin-left: 10px;
-           
+/*Modal content*/
+.main_wrapper .card .modal .modal_content .content.grid{
+  display:  flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
-.card .card-2 .card-2-inner-2 div .cop {
- width: 13px;
- height: 13px;
- margin-left: 40px;    
- 
+.main_wrapper .card .modal .modal_content .content.grid > div{
+  padding: 20px;
+  height: 100vh;
 }
-.card .card-2 .card-2-inner-2 div .mov {
- width: 16px;
- height: 16px;
- margin-left: 15px; 
-
+.main_wrapper .card .modal .modal_content .content.grid .card-wrapper{
+  flex: 1;
+  max-width: 200px;
+  background-color: #f7f9fc;
 }
+.main_wrapper .card .modal .modal_content .content.grid .card-wrapper .img{
+  width: 100%;
+}
+.main_wrapper .card .modal .modal_content .content.grid .card-wrapper .img img{
+  width: 100% !important;
+  height: auto !important;
+}
+.main_wrapper .card .modal .modal_content .content.grid .timelines h4{
+  color: #20A098;
+  font-weight: 600;
 
 
-   .card .card-2 .card-2-inner-3 {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    width: 212px;
-    height: 351px;
-    background: #FFFFFF;
-    border: 1px solid rgba(144, 255, 76, 0.25);
-    border-radius: 5px;
-    margin-left: 10px;
-    margin-top: 20px;
-   }
-   
-   .card .card-2 .card-2-inner-3 p {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 16px;
-    margin-left: 9px;
-    color: rgba(0, 0, 0, 0.8);
-    width: 192px;
-    height: 115px;
-   }
-   .card .card-2 .card-2-inner-3 div{
-    font-style: normal;
-    font-weight: normal;
-    font-size: 11px;
-    line-height: 13px;
-    color: rgba(0, 0, 0, 0.5);
-    margin-left: 9px;
-    margin-top: 35px;
-   }
-   .card .card-2 .card-2-inner-3 .pen {
-    width: 13px;
-    height: 13px;
-    margin-left: 10px;       
 }
-.card .card-2 .card-2-inner-3 div .cop {
- width: 13px;
- height: 13px;
- margin-left: 40px;    
- 
+.main_wrapper .card .modal .modal_content .content.grid .timelines{
+  flex: 3;
+  padding-top: 0px;
+  margin-left: 20px;
+  overflow-y: scroll;
 }
-.card .card-2 .card-2-inner-3 div .mov {
- width: 16px;
- height: 16px;
- margin-left: 15px; 
+/*Each timeline*/
+.main_wrapper .card .modal .modal_content .timeline{
+  width: 100%;
+  max-width: 500px;
+  color: #555;
+  padding: 25px 0px;
+  margin-left: 15px;
+  position: relative;
+  top: -5px;
+}
+.main_wrapper .card .modal .modal_content .timeline .meta{
+  position: relative;
+}
+.main_wrapper .card .modal .modal_content .timeline .meta .task{
+  font-weight: 600;
+  padding: 0px;
+  margin: 0px;
+}
+.main_wrapper .card .modal .modal_content .timeline .author{
+  font-size: 12px;
+  letter-spacing: 1.2px;
+}
+.main_wrapper .card .modal .modal_content .timeline .author a{
+  color: #20A098;
+}
+.main_wrapper .card .modal .modal_content .timeline .stats{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  font-size: 14px;
+}
+.main_wrapper .card .modal .modal_content .timeline .stats li{
+  display: flex;
+  flex-direction: column;
+  margin-right: 5px;
+   border-left: 1px solid #ccc;
+  padding: 5px;
 
 }
-   .card .card-2 .card-2-inner-4 {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    width: 212px;
-    height: 351px;
-    background: #FFFFFF;
-    border: 1px solid rgba(144, 255, 76, 0.25);
-    border-radius: 5px;
-    margin-left: 10px;
-    margin-top: 20px;
-   }
-   
-   .card .card-2 .card-2-inner-4 p {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 16px;
-    margin-left: 9px;
-    color: rgba(0, 0, 0, 0.8);
-    width: 192px;
-    height: 115px;
-   }
-   .card .card-2 .card-2-inner-4 div{
-    font-style: normal;
-    font-weight: normal;
-    font-size: 11px;
-    line-height: 13px;
-    color: rgba(0, 0, 0, 0.5);
-    margin-left: 9px;
-    margin-top: 35px;
-   }
-   .card .card-2 .card-2-inner-4 .pen {
-    width: 13px;
-    height: 13px;
-    margin-left: 10px;       
+/*The timeline lines*/
+.main_wrapper .card .modal .modal_content .timeline:before{
+  content: "";
+  position: absolute;
+  width: 1px;
+  top: 0;
+  bottom: 0;
+  left: -20px;
+  background-color: #ccc;
+  box-sizing: border-box;
 }
-.card .card-2 .card-2-inner-4 div .cop {
- width: 13px;
- height: 13px;
- margin-left: 40px;    
- 
-}
-.card .card-2 .card-2-inner-4 div .mov {
- width: 16px;
- height: 16px;
- margin-left: 15px; 
+/*The circle*/
+.main_wrapper .card .modal .modal_content .meta:before{
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  background-color: #20A098;
+  top: 0;
+  left: -32px;
+  box-sizing: border-box;
 
 }
-   
-   
-   /*Styling for third card */
-   .card .card-3 {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    width: 232px;
-    height: 228px;
-    background: rgba(255, 255, 255, 0.5);
-    border-radius: 10px;
-    border-top: 10px solid #59BB1E;
-    margin-left: 21px;
-    
-}
-.card .card-3 h4 {
-    text-align: center;
-    font-style: normal;
-     font-weight: bold;
-     font-size: 14px;
-     line-height: 16px;
-     color: #333333;
-}
-.card .card-3 .card-3-inner {
- box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
- width: 212px;
- height: 138px;
- background: #FFFFFF;
- border: 1px solid rgba(144, 255, 76, 0.25);
- border-radius: 5px;
- margin-left: 10px;
-}
 
-.card .card-3 .card-3-inner p {
- font-style: normal;
- font-weight: normal;
- font-family: 'Roboto';
- font-size: 14px;
- line-height: 16px;
- margin-left: 9px;
- color: rgba(0, 0, 0, 0.8);
- width: 192px;
- 
+  /*Style the scroll bar inside the modal*/
+.main_wrapper .home_wrapper .modal .timelines::-webkit-scrollbar{
+  width: 5px;
+  background-color: #fff;
+  border-radius: 50px;
 }
-.card .card-3 .card-3-inner div{
- font-style: normal;
- font-weight: normal;
- font-size: 11px;
- line-height: 13px;
- color: rgba(0, 0, 0, 0.5);
- margin-left: 9px;
- margin-top: 48px;
-}
-.card .card-3 .card-3-inner .pen {
-    width: 13px;
-    height: 13px;
-    margin-left: 10px;       
-}
-.card .card-3 .card-3-inner div .cop {
- width: 13px;
- height: 13px;
- margin-left: 40px;    
- 
-}
-.card .card-3 .card-3-inner div .mov {
- width: 16px;
- height: 16px;
- margin-left: 15px; 
-
-}
-   
-/*Styling for fourth card */
-.card .card-4 {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    width: 232px;
-    height: 576px;
-    background: rgba(255, 255, 255, 0.5);
-    border-radius: 10px;
-    border-top: 10px solid #59BB1E;
-    margin-left: 21px;
-}
-.card .card-4 h4 {
-    text-align: center;
-    font-style: normal;
-     font-weight: bold;
-     font-size: 14px;
-     line-height: 16px;
-     color: #333333;
-}
-.card .card-4 div {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 16px;
-    color: #333333;
-    margin-left: 9px;
-    margin-top: 20px;
-    
-}
-.card .card-4 .card-4-inner {
- box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
- width: 212px;
- height: 240px;
- background: #FFFFFF;
- border: 1px solid rgba(144, 255, 76, 0.25);
- border-radius: 5px;
- margin-left: 10px;
-}
-.card-4 .card-4-inner img{
-    width: 192px;
-    height: 96px;
-    margin-top: 10px;
-}
-.card .card-4 .card-4-inner p {
- font-style: normal;
- font-weight: normal;
- font-size: 14px;
- line-height: 16px;
- margin-left: 9px;
- color: rgba(0, 0, 0, 0.8);
- width: 192px;
- height: 79px;
-}
-.card .card-4 .card-4-inner div{
- font-style: normal;
- font-weight: normal;
- font-size: 11px;
- line-height: 13px;
- color: rgba(0, 0, 0, 0.5);
- margin-left: 9px;
- margin-top: 110px;
-
-}
-.card .card-4 .card-4-inner .pen {
-    width: 13px;
-    height: 13px;
-    margin-left: 10px;       
-}
-.card .card-4 .card-4-inner div .cop {
- width: 13px;
- height: 13px;
- margin-left: 40px;    
- 
-}
-.card .card-4 .card-4-inner div .mov {
- width: 16px;
- height: 16px;
- margin-left: 15px; 
-
-}
-   
-   
-.card .card-4 .card-4-inner-2 {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    width: 212px;
-    height: 200px;
-    background: #FFFFFF;
-    border: 1px solid rgba(144, 255, 76, 0.25);
-    border-radius: 5px;
-    margin-left: 10px;
-}
-.card .card-4 .card-4-inner-2 p {
-    width: 192px;
-    height: 147px;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 16px;
-    margin-left: 9px;
-    color: rgba(0, 0, 0, 0.8);
-}
-.card .card-4 .card-4-inner-2 div {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 11px;
-    line-height: 13px;
-    color: rgba(0, 0, 0, 0.5);
-    margin-left: 9px;
-    margin-top: -15px;
-}
-.card .card-4 .card-4-inner-2 .pen {
-    width: 13px;
-    height: 13px;
-    margin-left: 10px;       
-}
-.card .card-4 .card-4-inner-2 div .cop {
- width: 13px;
- height: 13px;
- margin-left: 40px;    
- 
-}
-.card .card-4 .card-4-inner-2 div .mov {
- width: 16px;
- height: 16px;
- margin-left: 15px; 
-
+.main_wrapper .home_wrapper .modal .timelines::-webkit-scrollbar-thumb{
+  background-color: #555;  
+  border-radius: 50px;                                                        
 }
 
 /*Styling for the right column/chatbox */
