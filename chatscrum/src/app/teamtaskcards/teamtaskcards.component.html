@@ -1,3 +1,4 @@
+<div class="hidden overlay"></div>
 <div class="container">
 <!--The Main navigation bar-->
 <header>
@@ -120,644 +121,375 @@
                 <!---Cards for team task-->
                 <div class="cards">
                     <div class="card">
-                        <div class="card-1">
-                            <h4>Task for the week</h4>
-                            <div class="inner-card">
-                                <p id="first-link"> Good from itself gathering rule men void
-                                    female let is creeping own.
-                                </p>
-                                <div class="action">
-                                    <li>
-                                        <span>600</span>
-                                        <img id="myimg-2" class="pen" src="assets/image/pen-solid.svg" alt="edit">
-                                    </li>
-                                    <li>
-                                         <img id="first-img" class="cop" src="assets/image/copy-solid.svg" alt="">
-                                    </li>
-                                    
-                                    <!-- Trigger/Open The Modal -->
-                                    <li>
-                                        <img id="myimg" class="cop" src="assets/image/history-solid.svg" alt="">
-                                    </li>
-
-                                    <!-- The Modal -->
-                                        <div id="myModal" class="modal">
-                                            <!-- Modal content -->
-                                            <div class="modal-content">
-                                                <span onclick="trigger()" class="close">&times;</span>
-                                                <div class="container">
-                                                    <div class="left">
-                                                        <div class="card-left">
-                                                            <p>Have own, Kind dominion,
-                                                            forth air waters won't, days
-                                                            whales fruitful fruit give shall.
-                                                            Life their his. Over first
-                                                            The.</p>
-                                                            <img src="assets/image/signupscreenshot2.png" alt="signup">
-                                                            <div>600</div>
-                                                        </div> 
-                                                    </div>
-                                                    <div class="main-content">
-                                                        <h4>Single Task History</h4>
-                                                        <div class="content">
-                                                            <div class="write-up">
-                                                                <div class="connector"></div>
-                                                                <div class="timeline">
-                                                                    <p class="event">Goal Moved </p>
-                                                                    <span class="by">By </span>  
-                                                                    <span class=dev>Joshua Okwe</span>
-
-                                                                    <div class="stat">
-                                                                        <p class="stat-1">
-                                                                            <span>Status</span>
-                                                                            1
-                                                                        </p>
-                                                                        <p class="stat-2">
-                                                                            <span>Hours</span>
-                                                                            5
-                                                                        </p>
-                                                                        <p class="stat-3">
-                                                                            <span>Date</span>
-                                                                             Jul 23, 2019
-                                                                         </p>
-                                                                     </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="write-up">
-                                                                <div class="connector"></div>
-                                                                <div class="timeline">
-                                                                    <p class="event">Goal Moved </p>
-                                                                    <span class="by">By </span>  
-                                                                    <span class=dev>Joshua Okwe</span>
-
-                                                                    <div class="stat">
-                                                                        <p class="stat-1">
-                                                                            <span>Status</span>
-                                                                            1
-                                                                        </p>
-                                                                        <p class="stat-2">
-                                                                            <span>Hours</span>
-                                                                            5
-                                                                        </p>
-                                                                        <p class="stat-3">
-                                                                            <span>Date</span>
-                                                                             Jul 23, 2019
-                                                                         </p>
-                                                                     </div>
-                                                                </div>
-                                                            </div>
+                        <h4 class="title">Task for the week</h4>
+                        <div class="inner-card">
+                            <p class="des"> Good from itself gathering rule men void
+                                female let is creeping own.
+                            </p>
+                            <div class="action">
+                                <li>
+                                    <span>600</span>
+                                    <img src="assets/image/pen-solid.svg" alt="edit">
+                                </li>
+                                <li>
+                                     <img src="assets/image/copy-solid.svg" alt="">
+                                </li>
+                                
+                                <!-- List contiaining a Modal -->
+                                <li class="modal_wrapper">
+                                    <img src="assets/image/history-solid.svg" alt="">
+                                    <!-- Modal begins -->
+                                    <div class="hidden modal">
+                                        <div class="cancel">&times;</div>
+                                        <div class="modal_content">
+                                            <div class="content grid">
+                                                <div class="card-wrapper">
+                                                     <div class="inner-card">
+                                                        <p class="des"> Good from itself gathering rule men void
+                                                            female let is creeping own.
+                                                        </p>
+                                                        <div class="img">
+                                                          <img src="assets/image/misc/1.jpg">
                                                         </div>
+                                                        <div class="action">
+                                                            <li>
+                                                                <span>600</span>
+                                                            </li>
+                                                        </div>                       
+                                                    </div>  
+                                                </div>
+                                                <div class="timelines">
+                                                  <h4>Single Task History</h4>
+                                                  <!-- Each history -->
+                                                  <div class="timeline">
+                                                    <div class="meta">
+                                                      <p class="task">
+                                                        Goal Moved
+                                                      </p>
+                                                      <div class="author">
+                                                        By <a href="">Joshua Okwe</a>
+                                                      </div>
                                                     </div>
+                                                    <div class="stats">
+                                                      <li>
+                                                        <span>Status</span>
+                                                        <span class="value">1</span>
+                                                      </li>
+                                                      <li>
+                                                        <span>Hours</span>
+                                                        <span class="value">5</span>
+                                                      </li>
+                                                      <li>
+                                                        <span>Date</span>
+                                                        <span class="value">July 23, 2019</span>
+                                                      </li>
+                                                    </div>
+                                                  </div>
+                                                  <div class="timeline">
+                                                    <div class="meta">
+                                                      <p class="task">
+                                                        Image added
+                                                      </p>
+                                                      <div class="author">
+                                                        By <a href="">Joshua Okwe</a>
+                                                      </div>
+                                                    </div>
+                                                    <div class="stats">
+                                                      <li>
+                                                        <span>Status</span>
+                                                        <span class="value">1</span>
+                                                      </li>
+                                                      <li>
+                                                        <span>Hours</span>
+                                                        <span class="value">5</span>
+                                                      </li>
+                                                      <li>
+                                                        <span>Date</span>
+                                                        <span class="value">July 23, 2019</span>
+                                                      </li>
+                                                    </div>
+                                                  </div>
+                                                  <div class="timeline">
+                                                    <div class="meta">
+                                                      <p class="task">
+                                                        Goal Moved
+                                                      </p>
+                                                      <div class="author">
+                                                        By <a href="">Joshua Okwe</a>
+                                                      </div>
+                                                    </div>
+                                                    <div class="stats">
+                                                      <li>
+                                                        <span>Status</span>
+                                                        <span class="value">1</span>
+                                                      </li>
+                                                      <li>
+                                                        <span>Hours</span>
+                                                        <span class="value">5</span>
+                                                      </li>
+                                                      <li>
+                                                        <span>Date</span>
+                                                        <span class="value">July 23, 2019</span>
+                                                      </li>
+                                                    </div>
+                                                  </div>
+                                                  <div class="timeline">
+                                                    <div class="meta">
+                                                      <p class="task">
+                                                        Goal Moved
+                                                      </p>
+                                                      <div class="author">
+                                                        By <a href="">Joshua Okwe</a>
+                                                      </div>
+                                                    </div>
+                                                    <div class="stats">
+                                                      <li>
+                                                        <span>Status</span>
+                                                        <span class="value">1</span>
+                                                      </li>
+                                                      <li>
+                                                        <span>Hours</span>
+                                                        <span class="value">5</span>
+                                                      </li>
+                                                      <li>
+                                                        <span>Date</span>
+                                                        <span class="value">July 23, 2019</span>
+                                                      </li>
+                                                    </div>
+                                                  </div>
+                                                  <div class="timeline">
+                                                    <div class="meta">
+                                                      <p class="task">
+                                                        Goal Moved
+                                                      </p>
+                                                      <div class="author">
+                                                        By <a href="">Joshua Okwe</a>
+                                                      </div>
+                                                    </div>
+                                                    <div class="stats">
+                                                      <li>
+                                                        <span>Status</span>
+                                                        <span class="value">1</span>
+                                                      </li>
+                                                      <li>
+                                                        <span>Hours</span>
+                                                        <span class="value">5</span>
+                                                      </li>
+                                                      <li>
+                                                        <span>Date</span>
+                                                        <span class="value">July 23, 2019</span>
+                                                      </li>
+                                                    </div>
+                                                  </div>
                                                 </div>
                                             </div>
-                                        <!--End of modal-->
-                                    <li>
-                                        <img class="mov" src="assets/image/scroll-2.png" alt="">
-                                    </li>
-                                </div>                       
-                                
-                            </div>   
+                                        </div>
+                                    </div>
+                                    <!-- Modal ends -->
+                                </li>
+                                <li>
+                                    <img class="mov" src="assets/image/scroll-2.png" alt="">
+                                </li>
+                            </div>                       
                         </div>  
-                         <div class="card-1">
-                            <h4>Task for the week</h4>
-                            <div class="inner-card">
-                                <p id="first-link"> Good from itself gathering rule men void
-                                    female let is creeping own.
-                                </p>
-                                <div class="action">
-                                    <li>
-                                        <span>600</span>
-                                        <img id="myimg-2" class="pen" src="assets/image/pen-solid.svg" alt="edit">
-                                    </li>
-                                    <li>
-                                         <img id="first-img" class="cop" src="assets/image/copy-solid.svg" alt="">
-                                    </li>
-                                    
-                                    <!-- Trigger/Open The Modal -->
-                                    <li>
-                                        <img id="myimg" class="cop" src="assets/image/history-solid.svg" alt="">
-                                    </li>
-                                    <li>
-                                        <img class="mov" src="assets/image/scroll-2.png" alt="">
-                                    </li>
-                                </div>                       
-                                
-                            </div>   
-                        </div>
-                        </div>
-                     </div>
-                     <div class="card">
-                        <div class="card-1">
-                            <h4>Task for the week</h4>
-                            <div class="inner-card">
-                                <p id="first-link"> Good from itself gathering rule men void
-                                    female let is creeping own.
-                                </p>
-                                <div class="action">
-                                    <li>
-                                        <span>600</span>
-                                        <img id="myimg-2" class="pen" src="assets/image/pen-solid.svg" alt="edit">
-                                    </li>
-                                    <li>
-                                         <img id="first-img" class="cop" src="assets/image/copy-solid.svg" alt="">
-                                    </li>
-                                    
-                                    <!-- Trigger/Open The Modal -->
-                                    <li>
-                                        <img id="myimg" class="cop" src="assets/image/history-solid.svg" alt="">
-                                    </li>
-
-                                    <!-- The Modal -->
-                                        <div id="myModal" class="modal">
-                                            <!-- Modal content -->
-                                            <div class="modal-content">
-                                                <span onclick="trigger()" class="close">&times;</span>
-                                                <div class="container">
-                                                    <div class="left">
-                                                        <div class="card-left">
-                                                            <p>Have own, Kind dominion,
-                                                            forth air waters won't, days
-                                                            whales fruitful fruit give shall.
-                                                            Life their his. Over first
-                                                            The.</p>
-                                                            <img src="assets/image/signupscreenshot2.png" alt="signup">
-                                                            <div>600</div>
-                                                        </div> 
-                                                    </div>
-                                                    <div class="main-content">
-                                                        <h4>Single Task History</h4>
-                                                        <div class="content">
-                                                            <div class="write-up">
-                                                                <div class="connector"></div>
-                                                                <div class="timeline">
-                                                                    <p class="event">Goal Moved </p>
-                                                                    <span class="by">By </span>  
-                                                                    <span class=dev>Joshua Okwe</span>
-
-                                                                    <div class="stat">
-                                                                        <p class="stat-1">
-                                                                            <span>Status</span>
-                                                                            1
-                                                                        </p>
-                                                                        <p class="stat-2">
-                                                                            <span>Hours</span>
-                                                                            5
-                                                                        </p>
-                                                                        <p class="stat-3">
-                                                                            <span>Date</span>
-                                                                             Jul 23, 2019
-                                                                         </p>
-                                                                     </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="write-up">
-                                                                <div class="connector"></div>
-                                                                <div class="timeline">
-                                                                    <p class="event">Goal Moved </p>
-                                                                    <span class="by">By </span>  
-                                                                    <span class=dev>Joshua Okwe</span>
-
-                                                                    <div class="stat">
-                                                                        <p class="stat-1">
-                                                                            <span>Status</span>
-                                                                            1
-                                                                        </p>
-                                                                        <p class="stat-2">
-                                                                            <span>Hours</span>
-                                                                            5
-                                                                        </p>
-                                                                        <p class="stat-3">
-                                                                            <span>Date</span>
-                                                                             Jul 23, 2019
-                                                                         </p>
-                                                                     </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        <!--End of modal-->
-                                    <li>
-                                        <img class="mov" src="assets/image/scroll-2.png" alt="">
-                                    </li>
-                                </div>                       
-                                
-                            </div>   
-                            </div>  
-                         <div class="card-1">
-                            <h4>Task for the week</h4>
-                            <div class="inner-card">
-                                <p id="first-link"> Good from itself gathering rule men void
-                                    female let is creeping own.
-                                </p>
-                                <div class="action">
-                                    <li>
-                                        <span>600</span>
-                                        <img id="myimg-2" class="pen" src="assets/image/pen-solid.svg" alt="edit">
-                                    </li>
-                                    <li>
-                                         <img id="first-img" class="cop" src="assets/image/copy-solid.svg" alt="">
-                                    </li>
-                                    
-                                    <!-- Trigger/Open The Modal -->
-                                    <li>
-                                        <img id="myimg" class="cop" src="assets/image/history-solid.svg" alt="">
-                                    </li>
-                                    <li>
-                                        <img class="mov" src="assets/image/scroll-2.png" alt="">
-                                    </li>
-                                </div>                       
-                                
-                            </div>   
-                             </div>
-                        </div>
-                     </div>
-                     <div class="card">
-                        <div class="card-1">
-                            <h4>Task for the week</h4>
-                            <div class="inner-card">
-                                <p id="first-link"> Good from itself gathering rule men void
-                                    female let is creeping own.
-                                </p>
-                                <div class="action">
-                                    <li>
-                                        <span>600</span>
-                                        <img id="myimg-2" class="pen" src="assets/image/pen-solid.svg" alt="edit">
-                                    </li>
-                                    <li>
-                                         <img id="first-img" class="cop" src="assets/image/copy-solid.svg" alt="">
-                                    </li>
-                                    
-                                    <!-- Trigger/Open The Modal -->
-                                    <li>
-                                        <img id="myimg" class="cop" src="assets/image/history-solid.svg" alt="">
-                                    </li>
-
-                                    <!-- The Modal -->
-                                        <div id="myModal" class="modal">
-                                            <!-- Modal content -->
-                                            <div class="modal-content">
-                                                <span onclick="trigger()" class="close">&times;</span>
-                                                <div class="container">
-                                                    <div class="left">
-                                                        <div class="card-left">
-                                                            <p>Have own, Kind dominion,
-                                                            forth air waters won't, days
-                                                            whales fruitful fruit give shall.
-                                                            Life their his. Over first
-                                                            The.</p>
-                                                            <img src="assets/image/signupscreenshot2.png" alt="signup">
-                                                            <div>600</div>
-                                                        </div> 
-                                                    </div>
-                                                    <div class="main-content">
-                                                        <h4>Single Task History</h4>
-                                                        <div class="content">
-                                                            <div class="write-up">
-                                                                <div class="connector"></div>
-                                                                <div class="timeline">
-                                                                    <p class="event">Goal Moved </p>
-                                                                    <span class="by">By </span>  
-                                                                    <span class=dev>Joshua Okwe</span>
-
-                                                                    <div class="stat">
-                                                                        <p class="stat-1">
-                                                                            <span>Status</span>
-                                                                            1
-                                                                        </p>
-                                                                        <p class="stat-2">
-                                                                            <span>Hours</span>
-                                                                            5
-                                                                        </p>
-                                                                        <p class="stat-3">
-                                                                            <span>Date</span>
-                                                                             Jul 23, 2019
-                                                                         </p>
-                                                                     </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="write-up">
-                                                                <div class="connector"></div>
-                                                                <div class="timeline">
-                                                                    <p class="event">Goal Moved </p>
-                                                                    <span class="by">By </span>  
-                                                                    <span class=dev>Joshua Okwe</span>
-
-                                                                    <div class="stat">
-                                                                        <p class="stat-1">
-                                                                            <span>Status</span>
-                                                                            1
-                                                                        </p>
-                                                                        <p class="stat-2">
-                                                                            <span>Hours</span>
-                                                                            5
-                                                                        </p>
-                                                                        <p class="stat-3">
-                                                                            <span>Date</span>
-                                                                             Jul 23, 2019
-                                                                         </p>
-                                                                     </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        <!--End of modal-->
-                                    <li>
-                                        <img class="mov" src="assets/image/scroll-2.png" alt="">
-                                    </li>
-                                </div>                       
-                                
-                            </div>   
-                        </div>  
-                         <div class="card-1">
-                            <div class="badge">
-                                1
+                        <div class="inner-card">
+                          <div class="badge">1</div>
+                            <p class="des"> Good from itself gathering rule men void
+                                female let is creeping own from itself gathering rule men void
+                                female let is creeping own tself gathering rule men void
+                                female let is creeping owfrom itself gathering rule men void
+                                female let 
+                            </p>
+                            <div class="action">
+                                <li>
+                                    <span>600</span>
+                                    <img src="assets/image/pen-solid.svg" alt="edit">
+                                </li>
+                                <li>
+                                     <img src="assets/image/copy-solid.svg" alt="">
+                                </li>
+                                <li>
+                                    <img src="assets/image/history-solid.svg" alt="">
+                                </li>
+                                <li>
+                                    <img class="mov" src="assets/image/scroll-2.png" alt="">
+                                </li>
+                            </div>                       
+                        </div>   
+                    </div>
+                    <div class="card">
+                        <h4 class="title">Today's Target</h4>
+                        <div class="inner-card">
+                            <p class="des"> Good from itself gathering rule men void
+                                female let is creeping own.
+                            </p>
+                            <div class="action">
+                                <li>
+                                    <span>600</span>
+                                    <img src="assets/image/pen-solid.svg" alt="edit">
+                                </li>
+                                <li>
+                                     <img src="assets/image/copy-solid.svg" alt="">
+                                </li>
+                                <li>
+                                    <img src="assets/image/history-solid.svg" alt="">
+                                </li>
+                                <li>
+                                    <img class="mov" src="assets/image/scroll-2.png" alt="">
+                                </li>
+                            </div>                       
+                        </div>   
+                        <div class="inner-card">
+                            <p class="des"> creeping own.
+                            </p>
+                            <div class="action">
+                                <li>
+                                    <span>600</span>
+                                    <img src="assets/image/pen-solid.svg" alt="edit">
+                                </li>
+                                <li>
+                                     <img src="assets/image/copy-solid.svg" alt="">
+                                </li>
+                                <li>
+                                    <img src="assets/image/history-solid.svg" alt="">
+                                </li>
+                                <li>
+                                    <img class="mov" src="assets/image/scroll-2.png" alt="">
+                                </li>
+                            </div>                       
+                        </div>   
+                        <div class="inner-card">
+                            <p class="des"> creeping own.
+                            </p>
+                            <div class="action">
+                                <li>
+                                    <span>600</span>
+                                    <img src="assets/image/pen-solid.svg" alt="edit">
+                                </li>
+                                <li>
+                                     <img src="assets/image/copy-solid.svg" alt="">
+                                </li>
+                                <li>
+                                    <img src="assets/image/history-solid.svg" alt="">
+                                </li>
+                                <li>
+                                    <img class="mov" src="assets/image/scroll-2.png" alt="">
+                                </li>
+                            </div>                       
+                        </div>   
+                        <div class="inner-card">
+                            <p class="des"> creeping own.
+                            </p>
+                            <div class="action">
+                                <li>
+                                    <span>600</span>
+                                    <img src="assets/image/pen-solid.svg" alt="edit">
+                                </li>
+                                <li>
+                                     <img src="assets/image/copy-solid.svg" alt="">
+                                </li>
+                                <li>
+                                    <img src="assets/image/history-solid.svg" alt="">
+                                </li>
+                                <li>
+                                    <img class="mov" src="assets/image/scroll-2.png" alt="">
+                                </li>
+                            </div>                       
+                        </div>   
+                        <div class="inner-card">
+                            <p class="des"> Good from itself gathering rule men void
+                                female let is creeping own tself gathering rule men void
+                                female let is creeping ow.
+                            </p>
+                            <div class="action">
+                                <li>
+                                    <span>600</span>
+                                    <img src="assets/image/pen-solid.svg" alt="edit">
+                                </li>
+                                <li>
+                                     <img src="assets/image/copy-solid.svg" alt="">
+                                </li>
+                                <li>
+                                    <img src="assets/image/history-solid.svg" alt="">
+                                </li>
+                                <li>
+                                    <img class="mov" src="assets/image/scroll-2.png" alt="">
+                                </li>
+                            </div>                       
+                        </div>   
+                    </div>
+                    <div class="card">
+                        <h4 class="title">Verify Task</h4>
+                        <div class="inner-card">
+                            <p class="des"> Good 
+                            </p>
+                            <div class="action">
+                                <li>
+                                    <span>600</span>
+                                    <img src="assets/image/pen-solid.svg" alt="edit">
+                                </li>
+                                <li>
+                                     <img src="assets/image/copy-solid.svg" alt="">
+                                </li>
+                                <li>
+                                    <img src="assets/image/history-solid.svg" alt="">
+                                </li>
+                                <li>
+                                    <img class="mov" src="assets/image/scroll-2.png" alt="">
+                                </li>
+                            </div>                       
+                        </div>   
+                    </div>
+                    <div class="card">
+                        <h4 class="title">Today's Target</h4>
+                        <p>SIUD</p>
+                        <div class="inner-card">
+                            <p class="des"> Good from itself gathering rule men void
+                                female let is creeping own.
+                            </p>
+                            <div class="img">
+                              <img src="assets/image/signupscreenshot2.png" alt="signup">
                             </div>
-                            <h4>Task for the week</h4>
-                            <div class="inner-card">
-                                <p id="first-link"> Good from itself gathering rule men void
-                                    female let is creeping own.
-                                </p>
-                                <div class="action">
-                                    <li>
-                                        <span>600</span>
-                                        <img id="myimg-2" class="pen" src="assets/image/pen-solid.svg" alt="edit">
-                                    </li>
-                                    <li>
-                                         <img id="first-img" class="cop" src="assets/image/copy-solid.svg" alt="">
-                                    </li>
-                                    
-                                    <!-- Trigger/Open The Modal -->
-                                    <li>
-                                        <img id="myimg" class="cop" src="assets/image/history-solid.svg" alt="">
-                                    </li>
-                                    <li>
-                                        <img class="mov" src="assets/image/scroll-2.png" alt="">
-                                    </li>
-                                </div>                       
-                                
-                            </div>   
-                        </div>
-                        </div>
-                     </div>
-                     <div class="card">
-                        <div class="card-1">
-                            <h4>Task for the week</h4>
-                            <div class="inner-card">
-                                <p id="first-link"> Good from itself gathering rule men void
-                                    female let is creeping own.
-                                </p>
-                                <div class="action">
-                                    <li>
-                                        <span>600</span>
-                                        <img id="myimg-2" class="pen" src="assets/image/pen-solid.svg" alt="edit">
-                                    </li>
-                                    <li>
-                                         <img id="first-img" class="cop" src="assets/image/copy-solid.svg" alt="">
-                                    </li>
-                                    
-                                    <!-- Trigger/Open The Modal -->
-                                    <li>
-                                        <img id="myimg" class="cop" src="assets/image/history-solid.svg" alt="">
-                                    </li>
-
-                                    <!-- The Modal -->
-                                        <div id="myModal" class="modal">
-                                            <!-- Modal content -->
-                                            <div class="modal-content">
-                                                <span onclick="trigger()" class="close">&times;</span>
-                                                <div class="container">
-                                                    <div class="left">
-                                                        <div class="card-left">
-                                                            <p>Have own, Kind dominion,
-                                                            forth air waters won't, days
-                                                            whales fruitful fruit give shall.
-                                                            Life their his. Over first
-                                                            The.</p>
-                                                            <img src="assets/image/signupscreenshot2.png" alt="signup">
-                                                            <div>600</div>
-                                                        </div> 
-                                                    </div>
-                                                    <div class="main-content">
-                                                        <h4>Single Task History</h4>
-                                                        <div class="content">
-                                                            <div class="write-up">
-                                                                <div class="connector"></div>
-                                                                <div class="timeline">
-                                                                    <p class="event">Goal Moved </p>
-                                                                    <span class="by">By </span>  
-                                                                    <span class=dev>Joshua Okwe</span>
-
-                                                                    <div class="stat">
-                                                                        <p class="stat-1">
-                                                                            <span>Status</span>
-                                                                            1
-                                                                        </p>
-                                                                        <p class="stat-2">
-                                                                            <span>Hours</span>
-                                                                            5
-                                                                        </p>
-                                                                        <p class="stat-3">
-                                                                            <span>Date</span>
-                                                                             Jul 23, 2019
-                                                                         </p>
-                                                                     </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="write-up">
-                                                                <div class="connector"></div>
-                                                                <div class="timeline">
-                                                                    <p class="event">Goal Moved </p>
-                                                                    <span class="by">By </span>  
-                                                                    <span class=dev>Joshua Okwe</span>
-
-                                                                    <div class="stat">
-                                                                        <p class="stat-1">
-                                                                            <span>Status</span>
-                                                                            1
-                                                                        </p>
-                                                                        <p class="stat-2">
-                                                                            <span>Hours</span>
-                                                                            5
-                                                                        </p>
-                                                                        <p class="stat-3">
-                                                                            <span>Date</span>
-                                                                             Jul 23, 2019
-                                                                         </p>
-                                                                     </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        <!--End of modal-->
-                                    <li>
-                                        <img class="mov" src="assets/image/scroll-2.png" alt="">
-                                    </li>
-                                </div>                       
-                                
-                            </div>   
-                        </div>  
-                         <div class="card-1">
-                            <h4>Task for the week</h4>
-                            <div class="inner-card">
-                                <p id="first-link"> Good from itself gathering rule men void
-                                    female let is creeping own.
-                                </p>
-                                <div class="action">
-                                    <li>
-                                        <span>600</span>
-                                        <img id="myimg-2" class="pen" src="assets/image/pen-solid.svg" alt="edit">
-                                    </li>
-                                    <li>
-                                         <img id="first-img" class="cop" src="assets/image/copy-solid.svg" alt="">
-                                    </li>
-                                    
-                                    <!-- Trigger/Open The Modal -->
-                                    <li>
-                                        <img id="myimg" class="cop" src="assets/image/history-solid.svg" alt="">
-                                    </li>
-                                    <li>
-                                        <img class="mov" src="assets/image/scroll-2.png" alt="">
-                                    </li>
-                                </div>                       
-                                
-                            </div>   
-                        </div>
-                        </div>
-                     </div>
-                     <div class="card">
-                        <div class="card-1">
-                            <h4>Task for the week</h4>
-                            <div class="inner-card">
-                                <p id="first-link"> Good from itself gathering rule men void
-                                    female let is creeping own.
-                                </p>
-                                <div class="action">
-                                    <li>
-                                        <span>600</span>
-                                        <img id="myimg-2" class="pen" src="assets/image/pen-solid.svg" alt="edit">
-                                    </li>
-                                    <li>
-                                         <img id="first-img" class="cop" src="assets/image/copy-solid.svg" alt="">
-                                    </li>
-                                    
-                                    <!-- Trigger/Open The Modal -->
-                                    <li>
-                                        <img id="myimg" class="cop" src="assets/image/history-solid.svg" alt="">
-                                    </li>
-
-                                    <!-- The Modal -->
-                                        <div id="myModal" class="modal">
-                                            <!-- Modal content -->
-                                            <div class="modal-content">
-                                                <span onclick="trigger()" class="close">&times;</span>
-                                                <div class="container">
-                                                    <div class="left">
-                                                        <div class="card-left">
-                                                            <p>Have own, Kind dominion,
-                                                            forth air waters won't, days
-                                                            whales fruitful fruit give shall.
-                                                            Life their his. Over first
-                                                            The.</p>
-                                                            <img src="assets/image/signupscreenshot2.png" alt="signup">
-                                                            <div>600</div>
-                                                        </div> 
-                                                    </div>
-                                                    <div class="main-content">
-                                                        <h4>Single Task History</h4>
-                                                        <div class="content">
-                                                            <div class="write-up">
-                                                                <div class="connector"></div>
-                                                                <div class="timeline">
-                                                                    <p class="event">Goal Moved </p>
-                                                                    <span class="by">By </span>  
-                                                                    <span class=dev>Joshua Okwe</span>
-
-                                                                    <div class="stat">
-                                                                        <p class="stat-1">
-                                                                            <span>Status</span>
-                                                                            1
-                                                                        </p>
-                                                                        <p class="stat-2">
-                                                                            <span>Hours</span>
-                                                                            5
-                                                                        </p>
-                                                                        <p class="stat-3">
-                                                                            <span>Date</span>
-                                                                             Jul 23, 2019
-                                                                         </p>
-                                                                     </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="write-up">
-                                                                <div class="connector"></div>
-                                                                <div class="timeline">
-                                                                    <p class="event">Goal Moved </p>
-                                                                    <span class="by">By </span>  
-                                                                    <span class=dev>Joshua Okwe</span>
-
-                                                                    <div class="stat">
-                                                                        <p class="stat-1">
-                                                                            <span>Status</span>
-                                                                            1
-                                                                        </p>
-                                                                        <p class="stat-2">
-                                                                            <span>Hours</span>
-                                                                            5
-                                                                        </p>
-                                                                        <p class="stat-3">
-                                                                            <span>Date</span>
-                                                                             Jul 23, 2019
-                                                                         </p>
-                                                                     </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        <!--End of modal-->
-                                    <li>
-                                        <img class="mov" src="assets/image/scroll-2.png" alt="">
-                                    </li>
-                                </div>                       
-                                
-                            </div>   
-                        </div>  
-                         <div class="card-1">
-                            <h4>Task for the week</h4>
-                            <div class="inner-card">
-                                <p id="first-link"> Good from itself gathering rule men void
-                                    female let is creeping own.
-                                </p>
-                                <div class="action">
-                                    <li>
-                                        <span>600</span>
-                                        <img id="myimg-2" class="pen" src="assets/image/pen-solid.svg" alt="edit">
-                                    </li>
-                                    <li>
-                                         <img id="first-img" class="cop" src="assets/image/copy-solid.svg" alt="">
-                                    </li>
-                                    
-                                    <!-- Trigger/Open The Modal -->
-                                    <li>
-                                        <img id="myimg" class="cop" src="assets/image/history-solid.svg" alt="">
-                                    </li>
-                                    <li>
-                                        <img class="mov" src="assets/image/scroll-2.png" alt="">
-                                    </li>
-                                </div>                       
-                                
-                            </div>   
-                        </div>
-                        </div>
-                     </div>
-                 </div>
+                            <div class="action">
+                                <li>
+                                    <span>600</span>
+                                    <img src="assets/image/pen-solid.svg" alt="edit">
+                                </li>
+                                <li>
+                                     <img src="assets/image/copy-solid.svg" alt="">
+                                </li>
+                                <li>
+                                    <img src="assets/image/history-solid.svg" alt="">
+                                </li>
+                                <li>
+                                    <img class="mov" src="assets/image/scroll-2.png" alt="">
+                                </li>
+                            </div>                       
+                        </div>   
+                        <div class="inner-card">
+                            <p class="des">
+                             creeping own Good from itself gathering rule men void
+                                female let is creeping
+                            </p>
+                            <div class="action">
+                                <li>
+                                    <span>600</span>
+                                    <img src="assets/image/pen-solid.svg" alt="edit">
+                                </li>
+                                <li>
+                                     <img src="assets/image/copy-solid.svg" alt="">
+                                </li>
+                                <li>
+                                    <img src="assets/image/history-solid.svg" alt="">
+                                </li>
+                                <li>
+                                    <img class="mov" src="assets/image/scroll-2.png" alt="">
+                                </li>
+                            </div>                       
+                        </div>    
+                    </div>
+                </div>
+            </div>
             <!---Right body-->
             <div class="right-body">
             <p class="notice">Joshua Okwe has joined the chat</p>
