@@ -11,10 +11,23 @@ import { UsertaskComponent } from './usertask/usertask.component';
 
 
 const routes: Routes = [
-  { path: 'teamtask', component: TeamtaskComponent},
-  { path: 'signup', component: SignupComponent},
-  { path: 'teamtaskcards', component: TeamtaskcardsComponent},
-  { path: 'usertask', component: UsertaskComponent}
+  { 
+    path: 'teamtask', component: TeamtaskComponent
+  },
+  { 
+    path: 'signup', component: SignupComponent
+  },
+  { 
+    path: 'teamtaskcards', component: TeamtaskcardsComponent
+  },
+  { 
+    path: 'usertask', component: UsertaskComponent
+  },
+    // Redirect to Teamtaskcards if no page is specified or a 404 
+  {
+    path: '', redirectTo: '/teamtaskcards', pathMatch: 'full'
+  }
+
 
 ];
 

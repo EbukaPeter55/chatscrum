@@ -1,19 +1,31 @@
+body{
+    overflow-x: hidden !important;
+}
+img{
+    max-width: 100%
+}
+li{
+  list-style: none;
+}
 .container {
     width: 100%;
-    }
+}
+/*Resize the crollbar*/
+body::-webkit-scrollbar{
+  width: 8px;
 
+}
 /*Styling for the main navigation bar */
-.topnav {
-    position: absolute;
+header {
+    position: sticky;
+    top: 0px;
     font-family: 'Roboto';
     height: 48px;
-    left: 0px;
-    right: 0px;
-    top: 0px;
     background: #26A69A;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
     width: auto;
     height: 48;
+    z-index: 999999999;
 }
 .item1 img {
     position: absolute;
@@ -308,262 +320,193 @@ margin-top: 14px;
 .item8 #img3 {
     width: 20px;
     height: 20px;
-    
 }
 
 /*End of styling for the main navigation bar */
 
 /*Styling for the body*/
 .body {
-    width: 100%;
+    padding: 0px;
+    margin: 0px; 
+}
+.main_wrapper{
+    max-width: 2000px;
+}
+.body .main_wrapper .home_wrapper{
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
     flex-wrap: nowrap;
-    
+    margin-right: 350px;
 }
 /*Styling for left/main column */
-.left-body {
-    width: 78%;
+.main_wrapper .home_wrapper .left-body{
+    flex: 3;
+    padding: 50px 10px;
 }
+.main_wrapper .home_wrapper .left-body .cards{
+  margin-top: 20px;
+  display: flex;
+}
+
 /*Styling for second sub-navigation bar */
-.sub-navbar-1 {
-    width: 994px;
-    height: 55px;
-    background: rgba(255, 76, 109, 0.1);
-    border-radius: 10px;
+.main_wrapper .home_wrapper .left-body .sub-nav{
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.main_wrapper .home_wrapper .left-body  .sub-navbar-1 {
+  background: rgba(255, 76, 109, 0.1);
+}
+.main_wrapper .home_wrapper .left-body  .sub-navbar-1  .author{
+  color: #FF4D6D !important;
+}
+.main_wrapper .home_wrapper .left-body  .sub-navbar-2 {
+  background: rgba(89, 187, 30,.1);
+}
+.main_wrapper .home_wrapper .left-body  .sub-navbar-2  .author{
+  color: #59BB1E !important;
+}
+.main_wrapper .home_wrapper .left-body  .sub-navbar-2 .des div{
+  background-color: #59BB1E
+}
+.main_wrapper .home_wrapper .sub-nav .author {
+  display: flex;
+  align-items: center;
+  flex: 4;    
+}
+.main_wrapper .home_wrapper .sub-nav .author .img {
+    width: 30px;
+    overflow: hidden;
+    height: 30px;  
+    border-radius: 100%;
+    border: 1.5px solid #ff5555;
+    align-self: center;  
+    margin-right: 10px;
+}
+.main_wrapper .home_wrapper .sub-nav .author .img img{
+  max-width: 100%;
+  position: relative;
+  border: none;
+
+}
+.main_wrapper .home_wrapper .sub-nav .author  p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    width: 187px;
+    height: 10px;
+    margin-top: -3px;
+
+}
+.main_wrapper .home_wrapper .sub-nav  .author p span {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-left: 30px;
-    margin-top: 72.47px;
     align-items: center;
-    }
-    .sub-navbar-1 img {
-        width: 25px;
-        height: 34px;
-        box-sizing: border-box;
-        padding-top: 10px;
-        margin-left: 10px;
-        margin-right: 10px;
-        margin-bottom: 10px;
-        
-    }
-    .sub-navbar-1 p{
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: bold;
-        font-size: 14px;
-        line-height: 16px;
-        color: #FF4D6D;
-        width: 187px;
-        height: 10px;
-        margin-top: -3px;
-    
-    }
-    .sub-navbar-1 p span {
-        width: 137px;
-        height: 10px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 12px;
-        line-height: 14px;
-        display: flex;
-        align-items: center;
-        color: #808080;
-        
-    }
-    .sub-navbar-1 .add {
-        background: #FF4C6D;
-        border-radius: 5px;
-        width: 32px;
-        height: 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: 593px;
-    }
-    .sub-navbar-1 .add img{
-        width: 30px;
-        height: 32px;
-    }
-    
-    .sub-navbar-1 .brief {
-        background: #FF4C6D;
-        border-radius: 5px;
-        width: 32px;
-        height: 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: 10px; 
-    }
-    .sub-navbar-1 .brief img{
-        width: 30px;
-        height: 32px;
-    }
-/*Styling for second sub-navigation bar */
-.sub-navbar {
-    width: 994px;
-    height: 55px;
-    background: rgba(89, 187, 30, 0.1);
-    border-radius: 9px 9px 0px 0px;
+    color: #808080;
+}
+.main_wrapper .home_wrapper .sub-nav .des{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;    
+  flex: 1;                                      
+}
+.main_wrapper .home_wrapper .sub-nav .des > div{
+    border-radius: 5px;
+    width: 30px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-left: 30px;
-    margin-top: 20px;
+    justify-content: center;
     align-items: center;
-    }
-    .sub-navbar img {
-        width: 25px;
-        height: 34px;
-        box-sizing: border-box;
-        padding-top: 10px;
-        margin-left: 10px;
-        margin-right: 10px;
-        margin-bottom: 10px;
-        
-    }
-    .sub-navbar p{
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: bold;
-        font-size: 14px;
-        line-height: 16px;
-        color: #59BB1E;
-        width: 187px;
-        height: 10px;
-        margin-top: -3px;
-    
-    }
-    .sub-navbar p span {
-        width: 137px;
-        height: 10px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 12px;
-        line-height: 14px;
-        display: flex;
-        align-items: center;
-        color: #808080;
-        
-    }
-    .sub-navbar .add {
-        background: #59BB1E;
-        border-radius: 5px;
-        width: 32px;
-        height: 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: 593px;
-    }
-    .sub-navbar .add img{
-        width: 30px;
-        height: 32px;
-    }
-    
-    .sub-navbar .brief {
-        background: #59BB1E;
-        border-radius: 5px;
-        width: 32px;
-        height: 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: 10px; 
-    }
-    .sub-navbar .brief img{
-        width: 30px;
-        height: 32px;
-    }
+    height: 30px;
+    background: #FF4C6D;     
+    margin: 0px 5px;                                     
+}
+.main_wrapper .home_wrapper .sub-nav .des > div img{
+   width: 20px;
+   height: 20px;                                            
+}
+
+   
     
    /*Cards styling */
-   .card {
+
+  .cards {
        display: flex;
        flex-direction: row;
        flex-wrap: wrap;
-       justify-content: center;
-       margin-top: -5px;
-
+       justify-content: stretch;
+       align-items: flex-start;
    } 
-   .card .card-1 {
+  .cards > div{
+       margin: 10px;
+       max-width: 200px;
        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-       width: 232px;
-       height: 433px;
        background: rgba(255, 255, 255, 0.5);
        border-radius: 10px;
        border-top: 10px solid #59BB1E;
-       margin-left: 3px;
-       margin-right: 21px;
-       
-   }
-   .card .card-1 h4 {
-       text-align: center;
-       font-style: normal;
-        font-weight: bold;
-        font-size: 14px;
-        line-height: 16px;
-   }
-   .card .card-1 .card-1-inner {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    width: 212px;
-    height: 105px;
-    background: #FFFFFF;
-    border: 1px solid rgba(144, 255, 76, 0.25);
-    border-radius: 5px;
-    margin-left: 10px;
-   }
-
-   .card .card-1 .card-1-inner p {
-    width: 192px;
-    height: 50px;
-    font-style: normal;
-    font-weight: normal;
-    font-family: 'Roboto';
-    font-size: 14px;
-    line-height: 16px;
-    margin-left: 10px;
-    color: rgba(0, 0, 0, 0.8);
-   }
-   .card .card-1 .card-1-inner div {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 11px;
-    line-height: 13px;
-    color: rgba(0, 0, 0, 0.5);
-    margin-left: 9px;
-    margin-top: -19px;
-    
-   }
-   .card .card-1 .card-1-inner .pen {
+       align-self: flex-start;
+       padding: 10px;
+    } 
+    .card > div > div{
+      width: 100%;
+      box-sizing: border-box;
+      background: #FFFFFF;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      padding: 10px;
+      box-sizing: border-box;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      box-shadow: 0px 5px 10px rgba(0,0,0,.3);
+      position: relative;
+    }
+     .card .badge{
+        height: 23px;
+        width: 23px;
+        font-size: 10px;
+        background-color: #C90000;
+        color: #fff;
+        text-align: center;
+        padding: 5px;
+        position: absolute;
+        top: -10px;
+        left: -10px;
+        border-radius: 100%;
+        box-sizing: border-box;
+     }
+    .card > div h4{
+      text-align: center;
+    }
+    .card > div > .inner-card p{
+      font-family: 'Roboto';
+      font-size: 14px;
+      color: rgba(0, 0, 0, 0.8);
+    }
+    .card > div > div img{
        width: 13px;
        height: 13px;
-       margin-left: 10px;       
        cursor: pointer;
-   }
-   /*Adding a text tool tip */
-   
-  
-   .card .card-1 .card-1-inner div .cop {
-    cursor: pointer;
-    width: 13px;
-    height: 13px;
-    margin-left: 40px;    
-    
-   }
-   .card .card-1 .card-1-inner div .mov {
-    width: 16px;
-    height: 16px;
-    margin-left: 15px; 
-    cursor: pointer;
-
-   }
+       padding-left: 5px;
+    }
+    .card .action{
+      display: flex;
+      justify-content: space-between;
+    }
+    .card .action li{
+      margin: 0px 5px;
+    }
 
    /*Styling for the edit modal */
-   .card .card-1 .card-1-inner .edit{
+   .card .card-1 .inner-card .edit{
        display: none;
        
    }
@@ -603,52 +546,47 @@ margin-top: 14px;
 }
    
    /* Modal */
-   /* The Modal (background) */
-   .card .card-1 .card-1-inner .modal {
-    display: none;
-}
+
 .modal {
     display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    margin-top: 6%;
-    left: 0;
-    top: 0;
-    display: flex;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
+    position: absolute; /* Stay in place */
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    z-index: 99999999;
   }
   .modal .modal-content {
       border-radius: 10px;
-      width: 900px;
-      height: 731px;
-      left: 15%;
-      right: 20%;
-      top: 6%;
-      position: relative;
+      max-width: 80%;
+      height: 70vh;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      overflow-y: scroll;
+      overflow-x: hidden;
       z-index: 1; /* Sit on top */
   }
   .modal .modal-content .container {
-      width: 900px;
-      height: 400px;
+      width: 100%;
+      padding: 20px;
       display: flex;
       flex-direction: row;
-      
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;      
   }
-  .container .left{
-   width: 158px;
-   height: 700px;   
-  }
+ 
   .container .left .card-left {
-    position: relative;
+    padding: 10px;
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    width: 212px;
-    height: 240px;
-    top: 2.7%;
-    left: -20px;
-    
+    max-width: 212px;
+    height: 240px;    
+    flex: 1;
         
   }
   .container .left .card-left p{
@@ -658,164 +596,69 @@ margin-top: 14px;
     font-size: 14px;
     line-height: 16px;
     color: rgba(0, 0, 0, 0.8);
-    border-radius: 10px;
-    margin-top: 10px;
   }
   .container .left .card-left img {
-      width: 192px;
-      height: 96px;
+      width: 100%;
+      height: auto;
       margin-top: 15px;
-      margin-left: 10px;
   }
-  .container .left .card-left div {
-      margin-top: 19px;
+  .container .modal-content .main-content {
+      flex: 3;
+      border: 1px solid red;
+      margin-left: 20px; 
   }
-  .container .main-content {
-      width: 742px;
-      height: 700px;
-  }
-  .container .main-content h4 {
-    font-family: 'Roboto';
+  .container .modal .main-content h4 {
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
-    line-height: 16px;
     color: #26A69A;
-    margin-left: -440px;
-    border-radius: 10px;
-    margin-top: -1px;
+    text-align: center;
   }
-  .main-content .content {
+  .modal .main-content .content .write-up{
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
+      margin-bottom: 50px;
   }
-  .main-content .content img{
-      margin-left: 80px;
-      margin-top: 23px;
-      height: 580px;
+  .modal .main-content .content .write-up .connector{
+      height: 35px;
+      width: 35px;
+      border-radius: 100%;
+      background: #4DFFD4;
+      margin-right: 10px;
   }
-  .main-content .content .el { 
-    width: 17px;
-    height: 17px;
-    margin-left: -9px;
-    margin-top: 41px;
-}
-
-.main-content .content .el-2 {
-    width: 17px;
-    height: 17px;
-    margin-left: -15px;
-    margin-top: 186px;
-}
-
-.main-content .content .el-3 {
-    width: 17px;
-    height: 17px;
-    margin-left: -17px;
-    margin-top: 326px;
-}
-
-.main-content .content .el-4 {
-    width: 17px;
-    height: 17px;
-    margin-left: -17px;
-    margin-top: 471px;
-}
-
-  
-  .main-content .content .write-up p {
-     
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;    
-    color: rgba(0, 0, 0, 0.8);
-    margin-top: 60px;
-    margin-left: 16px;
+  .modal .main-content .content .write-up .timeline:before {
+      content: " ";
+      position: absolute;
+      left: -27px;
+      top: 38px;
+      height: 100px;
+      width: 1px;
+      background: #ccc;
   }
-  .main-content .content .write-up .second {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 16px;    
-    color: rgba(0, 0, 0, 0.8);
-    margin-top: 10px;
-    margin-left: 16px;
+  .modal .main-content .content .write-up .timeline{
+    display: flex;
+    flex-direction: column;
+    position: relative;
   }
-  
-
-  .main-content .content .write-up .stat {
-      display: flex;
-      flex-direction: row;
-      margin-top: -80px;
-      
-      
-  }
-
-  .main-content .content .write-up .stat .border {
-    
-  }
-  .main-content .content .write-up .stat .stat-1 span, 
-  .main-content .content .write-up .stat .stat-2 span,
-  .main-content .content .write-up .stat .stat-3 span  {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 14px;
-    color: rgba(0, 0, 0, 0.5);
-    
-  }
-  .main-content .content .write-up .stat .stat-1, 
-  .main-content .content .write-up .stat .stat-2,
-  .main-content .content .write-up .stat .stat-3{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 16px;
-    
-    color: rgba(0, 0, 0, 0.8);
-    
-  }
-  .main-content .content .write-up .stat .stat-1 div {
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    width: 40px;
-  }
-  .main-content .content .write-up .stat-1 {
-   margin-right: 4px; 
-  }
-  
-  .main-content .content .write-up .stat-2 {
-    margin-left: -30px;
+   .modal .main-content .content .write-up .timeline p{
+      font-weight: 600;
+      font-size: 12px;
    }
-   .main-content .content .write-up .stat-3 {
-     margin-left: -45px;
+    .modal .main-content .content .write-up .timeline .by{
+      font-size: 12px;
+      font-weight: bold;
     }
-  .content .write-up p .by {
-    color: rgba(0, 0, 0, 0.5);
-    
-  }
-  .content .write-up p .dev {
-      font-family: 'roboto';
-      color: #26A69A;
-      font-style: normal;
-font-weight: normal;
-  }
-  .content .write-up div{
-      padding: 0px;
-      margin: 0px;
-  }
-  .vl {
-    
-    height: 0px;    
-    border: 1px solid rgba(51, 51, 51, 0.2);
-    border-radius: 10px;
-    
-  }
+     .modal .main-content .content .write-up .timeline  .dev{
+      margin: 5px 0px;
+     }
+    .modal .main-content .content .write-up .timeline  .stat{
+      display: flex;
+      font-weight: normal;
+    }
+    .modal .main-content .content .write-up .timeline .stat > p{
+      margin: 0px 5px;
+    }
   /* Modal Content */
 .modal-content {
     background-color: #fefefe;
@@ -840,23 +683,9 @@ font-weight: normal;
     cursor: pointer;
   }
   /*End of modal styling */
-  
-   .card .card-1  .card-1-inner-2 .danger {
-       background: #C90000; 
-       width: 15px;
-       height: 15px;
-       color: #FFFFFF;
-       border-radius: 50px;
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       margin-top: 1px;
-       margin-right: 35px;
-       margin-left: -5px;
 
-   }
    /*Styling for lower inner card */
-   .card .card-1 .card-1-inner-2 {
+   .card .card-1 .inner-card-2 {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     width: 212px;
     height: 218px;
@@ -866,7 +695,7 @@ font-weight: normal;
     margin-top: 20px;
     margin-left: 10px;
    }
-   .card .card-1 .card-1-inner-2 p {
+   .card .card-1 .inner-card-2 p {
     width: 192px;
     height: 165px;
     font-family: 'Roboto';
@@ -877,7 +706,7 @@ font-weight: normal;
     margin-left: 9px;
     color: rgba(0, 0, 0, 0.8);
    }
-   .card .card-1 .card-1-inner-2 div{
+   .card .card-1 .inner-card-2 div{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: normal;
@@ -887,20 +716,20 @@ font-weight: normal;
     margin-left: 9px;
     margin-top: -35px;  
    }
-   .card .card-1 .card-1-inner-2 .pen {
+   .card .card-1 .inner-card-2 .pen {
     width: 13px;
     height: 13px;
     margin-left: 10px;       
     cursor: pointer;
 }
-.card .card-1 .card-1-inner-2 div .cop {
+.card .card-1 .inner-card-2 div .cop {
  width: 13px;
  height: 13px;
  margin-left: 40px;    
  cursor: pointer;
  
 }
-.card .card-1 .card-1-inner-2 div .mov {
+.card .card-1 .inner-card-2 div .mov {
  width: 16px;
  height: 16px;
  margin-left: 15px; 
@@ -1348,102 +1177,48 @@ font-weight: normal;
 }
 
 /*Styling for the right column/chatbox */
-.right-body {
-    width: 22%;
-    height: 908px;
+.main_wrapper .home_wrapper .right-body::-webkit-scrollbar{
+  width: 5px;
+  background-color: #aaaaaa;
+  border-radius: 50px;
+}
+.main_wrapper .home_wrapper .right-body::-webkit-scrollbar-thumb{
+  background-color: #eee;  
+  border-radius: 50px;                                                        
+}
+.main_wrapper .home_wrapper .right-body {
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    right: 0px;
     background: #343434;
+    padding: 20px;
+    overflow-y: scroll;
+    font-family: 'Roboto';
 }
-.right-body .first{
-   text-align: center;
-   font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 14px;
-    margin-top: 73px;
-    color: rgba(255, 255, 255, 0.5);
-
-}
-.first-right {
-    width: 280px;
-    height: 107px;
+.main_wrapper .home_wrapper .right-body  > div{
+    width: 100%;   
     border: 1px solid rgba(255, 255, 255, 0.2);
     box-sizing: border-box;
-    border-radius: 10px;
-    margin-left: 8px;
+    padding: 10px;
+    border-radius: 10px; 
+    margin: 10px 0px;                                           
 }
-.first-right div span {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 16px;
+.main_wrapper .home_wrapper .right-body  > div > div{
     display: flex;
     align-items: center;
-    color: #4DFFD4;
-    
+    flex-wrap: nowrap;    
+    margin-bottom: 8px;                                                 
 }
-.first-right div {
-    display: flex;
-    flex-direction: row;
-    margin-left: 7px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-
-}
-.first-right p {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 16px;
-    margin-top: -1px;
-    color: #FFFFFF;
-    margin-left: 10px;
-
-}
-
-.first-right span {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: normal;
+.main_wrapper .home_wrapper .right-body .notice{
+   color: rgba(255, 255, 255, 0.5);
     font-size: 12px;
     line-height: 14px;
-    color: rgba(255, 255, 255, 0.2);
-    margin-left: 10px;
+    margin: 10px 0px;
+    text-align: center;
 }
-
-/*Second container */
-.second-right {
-    width: 280px;
-    height: 127px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    box-sizing: border-box;
-    border-radius: 10px;
-    margin-left: 8px;
-    margin-top: 20px;
-}
-.second-right div span {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 16px;
-    display: flex;
-    align-items: center;
-    color: #FF4D6D;
-
-    
-}
-.second-right div {
-    display: flex;
-    flex-direction: row;
-    margin-left: 7px;
-    margin-top: 9px;
-    margin-bottom: 10px;
-
-}
-.second-right p {
+.main_wrapper .home_wrapper .right-body  > div p{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: normal;
@@ -1451,165 +1226,67 @@ font-weight: normal;
     line-height: 16px;
     margin-top: -1px;
     margin-left: 9px;
-    color: #FFFFFF;
-
+    color: #FFFFFF;                                                 
 }
-.second-right span {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 14px;
-    color: rgba(255, 255, 255, 0.2);
-    margin-left: 10px;
-}
-.right-body .second {
-    text-align: center;
-   font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 14px;
-    margin-top: 20px;
-    color: rgba(255, 255, 255, 0.5);
-
-}
-.right-body .third{
-    text-align: center;
-   font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 14px;
-    margin-top: 10px;
-    color: rgba(255, 255, 255, 0.5);
-
-}
-
-/*third container */
-.third-right {
-    width: 280px;
-    height: 173px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    box-sizing: border-box;
-    border-radius: 10px;
-    margin-left: 8px;
-    margin-top: 20px;
-}
-.third-right div span {
-    font-family: 'Roboto';
-    font-style: normal;
+.main_wrapper .home_wrapper  .right-body >  div .author {
     font-weight: bold;
     font-size: 14px;
     line-height: 16px;
     display: flex;
-    align-items: center;
-    color: #59BB1E;
+    align-items: center; 
+    padding-left: 8px;   
 }
-.third-right div {
-    display: flex;
-    flex-direction: row;
-    margin-left: 7px;
-    margin-top: 9px;
-    margin-bottom: 10px;
 
+/*COlors For each author*/
+.main_wrapper .home_wrapper  .right-body .first-right .author{
+    color: #4DFFD4 !important;                                                             
 }
-.third-right p {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 16px;
-    margin-top: -1px;
-    margin-left: 9px;
-    color: #FFFFFF;
+.main_wrapper .home_wrapper  .right-body .second-right .author{
+    color: #FF4D6D !important;                                                             
+}
+.main_wrapper .home_wrapper  .right-body .third-right .author{
+    color: #59BB1E !important;                                                             
+}
+.main_wrapper .home_wrapper  .right-body .fourth-right .author{
+    color: #4DFFD4 !important;                                                             
+}
 
+.main_wrapper .home_wrapper  .right-body  div .timeStamp{
+   color:  rgba(255, 255, 255, 0.5) !important;
+   font-size: 12px;                                                              
 }
-.third-right span {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 14px;
-    color: rgba(255, 255, 255, 0.2);
-    margin-left: 10px;
+.main_wrapper .home_wrapper  .right-body form {
+  margin: 20px 0px 50px 0px;
 }
-.third-body .second {
-    text-align: center;
-   font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 14px;
-    margin-top: 20px;
-    color: rgba(255, 255, 255, 0.5);
-
-}
-/*Fourth container */
-.fourth-right {
-    width: 280px;
-    height: 127px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+.main_wrapper .home_wrapper  .right-body textarea{
+    width: 100%;
+    height: 80px;
+    border-radius: 3px;
     box-sizing: border-box;
-    border-radius: 10px;
-    margin-left: 8px;
-    margin-top: 23px;
-}
-.fourth-right div span {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 16px;
-    display: flex;
-    align-items: center;
-    color: #4DFFD4;
-
-
-    
-}
-.fourth-right div {
-    display: flex;
-    flex-direction: row;
-    margin-left: 7px;
-    margin-top: 9px;
-    margin-bottom: 10px;
-
-}
-.fourth-right p {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 16px;
-    margin-top: -1px;
-    margin-left: 9px;
-    color: #FFFFFF;
-
-}
-.fourth-right span {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 14px;
-    color: rgba(255, 255, 255, 0.2);
-    margin-left: 10px;
-}
-
-input[type=text] {
-    width: 295px;
-    height: 50px;
+    padding: 10px;
     background: rgba(255, 255, 255, 0.2);
-    margin-top: 39px;
     border: none;
+    outline: none;
+    font-family: "Roboto";
+    color: #eee;
 }
-input[type=text]::-webkit-input-placeholder {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: normal;
+.main_wrapper .home_wrapper  .right-body ::-webkit-input-placeholder {
+    font-family: "Roboto";                                                                   
     font-size: 14px;
-    line-height: 16px;
+    font-family: inherit;
     color: rgba(255, 255, 255, 0.5);
-    padding-left: 10px;
+}
+.main_wrapper .home_wrapper  .right-body form button{
+    padding: 10px 20px;
+    width: 30%;
+    border: none;
+    border-radius: 3px;
+    background-color: #222;
+    color: #ddd;
+    margin-top: 5px;
+    cursor: pointer;
+
+}
+.main_wrapper .home_wrapper  .right-body form button:hover{
+  opacity: .8                                                           
 }
