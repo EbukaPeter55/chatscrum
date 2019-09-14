@@ -14,46 +14,49 @@ export class TeamtaskcardsComponent implements OnInit {
   ngOnInit() {
     
     // Initialise Modal  function
-    window.addEventListener("load", toggleModal)
-      function toggleModal() {
-        let modalTrigger = document.querySelectorAll(".modal_wrapper");
-        let overlay = document.querySelector(".overlay");
+   // Toggle modal
 
-        // modalTrigger.forEach(trigger => {
-          for (let i = 0; i < modalTrigger.length; i++) {
-            const trigger = modalTrigger[i];
-            // Get the modal element under the index
-            let modal = trigger.querySelector(".modal");
-            let close = modal.querySelector(".cancel");
-            // Functions to call to hide or show
-              let showModal = ()=>{
-                modal.classList.remove("hidden");
-                overlay.classList.remove("hidden");
-              };
-              let hideModal = ()=>{
-                modal.classList.add("hidden");
-                overlay.classList.add("hidden");
-              };
-            // Call the function
-            trigger.addEventListener('click', ()=>{
-              showModal();
-            });
-            close.addEventListener("click", ()=>{
-              hideModal();
-            });
-
-          // Close the modal if user clicks anywhere outside the modal
-          window.onclick = (event)=>{
-            if (event.target === overlay) {
-              hideModal()
-            }
-          }
+    window.addEventListener("load", modalControl)
+    function modalControl(){
+      console.log("loaded");
+      let modalToggle = document.querySelectorAll(".modal_toggle");
+      let modal = document.querySelector(".modal");
+      let overlay = document.querySelector(".overlay");
+      var close = modal.querySelector("#cancel");
+      modalToggle.forEach((toggle)=>{
+        toggle.addEventListener("click", lunchModal);
+        function lunchModal(){
+          modalSwitch.show()
         };
+        // hide modal when user clicks the close icon
+        close.addEventListener("click", function(){
+          modalSwitch.hide();
+          console.log("clicked")
+        });
+      });
+      // modal modes
+      var modalSwitch = {
+        show : ()=>{
+          overlay.classList.remove("hidden");
+          modal.classList.remove("hidden");
+        },
+        hide : ()=>{
+          overlay.classList.add("hidden");
+          modal.classList.add("hidden");
+        }
+      };
+
+      // Hide modal when user clicks outside the modal
+
+      window.addEventListener('click', function(event){
+        if (event.target === overlay) {
+          modalSwitch.hide();
+        }
+      })
+    };
 
 
-        
-        
-      }
+
       
     
   }

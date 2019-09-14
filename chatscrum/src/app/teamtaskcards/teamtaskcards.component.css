@@ -561,7 +561,7 @@ margin-top: 14px;
   transition: .3s ease-out;
   transform: translate(-50%, -40%) !important;
 }
-.main_wrapper .card .modal .cancel {
+.main_wrapper .card .modal #cancel {
     position: absolute;
      right: 8px;
      top: 5px;
@@ -578,7 +578,7 @@ margin-top: 14px;
      text-align: center;
      transition: .5s;
   }
-.main_wrapper .card .modal .cancel:hover{
+.main_wrapper .card .modal #cancel:hover{
   border-color: #aaa;
   color: #222;
   transition: .5s;
