@@ -6,7 +6,7 @@
             <div class="item1"><img href="#home" src="assets/image/chatscrumlogo.png"></div>
             <div class="item2" id="mytasks">
                 
-                <span id="task1" class="active">My Tasks</span>
+                <span id="task1" class="active" routerLink="/mytask">My Tasks</span>
             </div>
             <div class="item2" id="teamtasks">
                     <div id="top"></div>
@@ -53,8 +53,8 @@
                 <span id="span2">Developer</span>
             </div>
             <div class="item8">
-                <img id="img1" src="assets/image/right-img-2.png">
-                <img id="img2" src="assets/image/right-img-3.png">
+                <img id="img1" src="assets/image/help.png">
+                <img id="img2" src="assets/image/power.png">
             </div>
             <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
@@ -80,7 +80,32 @@
                     </div>
                     <div class="des">
                         <div class="add"> 
+                          <li class="modal_toggle modal_wrapper">
                             <img src="assets/image/add-2.svg" alt="add">
+                            <!----<span class='tooltip'>Add</span>---->
+                            <!-- Modal begins -->
+                            <div class="hidden add_task modal">
+                                        
+                                <div class="modal_content">
+                                  <div class="edit-nav">
+                                  <li><img src="assets/image/louis.png" alt="dev">
+                                  <div class="nam">Louis E<br><div class="smal-dev">Developer</div></div></li>  
+                                  <div id="cancel">&times;</div> 
+                                  </div>
+                                  <p>Add Task</p>
+                                  <div class="ed-container">
+                                    <p>Sea cattle. The moving together there don't two night our midst behold there fill brought
+                                    tree rule there from firmament night be female. Firmament he replenish third fruit him
+                                    there grass beast. Very wherein. Hath, them. Seas grass shall form had divide.</p>
+                                  </div>
+                                  <div class="edit-foot">
+                                    <button>ADD TASK</button> <div>CANCEL</div>
+                                  </div>
+                                  
+                                </div>
+                            </div>
+                            <!-- Modal ends -->
+                          </li>     
                         </div>
                         <div class="brief">
                             <img src="assets/image/brief-2.svg" alt="brief">
@@ -133,9 +158,23 @@
                                     <span class='tooltip'>Edit</span>
                                     <!-- Modal begins -->
                                     <div class="hidden edit_task modal">
-                                        <div id="cancel">&times;</div>
+                                        
                                         <div class="modal_content">
-                                            Hello world, this is another modal of variable size
+                                          <div class="edit-nav">
+                                          <li><img src="assets/image/louis.png" alt="dev">
+                                          <div class="nam">Louis E<br><div class="smal-dev">Developer</div></div></li>  
+                                          <div id="cancel">&times;</div> 
+                                          </div>
+                                          <p>Edit Task</p>
+                                          <div class="ed-container">
+                                            <p>Sea cattle. The moving together there don't two night our midst behold there fill brought
+                                            tree rule there from firmament night be female. Firmament he replenish third fruit him
+                                            there grass beast. Very wherein. Hath, them. Seas grass shall form had divide.</p>
+                                          </div>
+                                          <div class="edit-foot">
+                                            <button>EDIT TASK</button> <div>CANCEL</div>
+                                          </div>
+                                          
                                         </div>
                                     </div>
                                     <!-- Modal ends -->
@@ -153,10 +192,15 @@
                                             <div class="content grid">
                                                 <div class="card-wrapper">
                                                      <div class="inner-card">
-                                                        <p class="des"> Good, here and now
+                                                        <p class="des">Have own , kind dominion,
+                                                            forth air waters won't days
+                                                            whales fruitful fruit give shall.
+                                                            Life their rule his. Over first
+                                                            The.
+                                                            
                                                         </p>
-                                                        <div class="img">
-                                                          <img src="assets/image/misc/1.jpg">
+                                                        <div class="img le">
+                                                          <img src="assets/image/signupscreenshot2.png">
                                                         </div>
                                                         <div class="action">
                                                             <li>
@@ -174,8 +218,7 @@
                                                         Goal Moved
                                                       </p>
                                                       <div class="author">
-                                                        By <a href="">Joshua Okwe</a>
-                                                      </div>
+                                                        By <span>Joshua Okwe</span>                                                      </div>
                                                     </div>
                                                     <div class="stats">
                                                       <li>
@@ -198,7 +241,7 @@
                                                         Image added
                                                       </p>
                                                       <div class="author">
-                                                        By <a href="">Joshua Okwe</a>
+                                                        By <span>Joshua Okwe</span>
                                                       </div>
                                                     </div>
                                                     <div class="stats">
@@ -222,7 +265,7 @@
                                                         Goal Moved
                                                       </p>
                                                       <div class="author">
-                                                        By <a href="">Joshua Okwe</a>
+                                                        By <span>Joshua Okwe</span>
                                                       </div>
                                                     </div>
                                                     <div class="stats">
@@ -246,7 +289,7 @@
                                                         Goal Moved
                                                       </p>
                                                       <div class="author">
-                                                        By <a href="">Joshua Okwe</a>
+                                                        By <span>Joshua Okwe</span>
                                                       </div>
                                                     </div>
                                                     <div class="stats">
@@ -270,7 +313,7 @@
                                                         Goal Moved
                                                       </p>
                                                       <div class="author">
-                                                        By <a href="">Joshua Okwe</a>
+                                                        By <span>Joshua Okwe</span>
                                                       </div>
                                                     </div>
                                                     <div class="stats">
@@ -1991,12 +2034,9 @@
                 </p>
                 <span class="timeStamp">10:02am * 9-07-2019</span>
             </div>
-            <form>
-                <div class="field">
-                 <textarea placeholder="Send a message..."></textarea>
-                 <button>Send</button>
-                </div>
-            </form>
+      
+                <input type="text" placeholder="send a message">
+            
         </div>
                 <!-- Home wrapper closes -->
             </div>
