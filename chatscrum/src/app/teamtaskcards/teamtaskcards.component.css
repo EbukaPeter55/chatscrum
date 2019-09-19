@@ -346,7 +346,7 @@ margin-top: 14px;
 .main_wrapper .home_wrapper .left-body{
   flex: 3;
   padding: 50px 10px;
-  /*Specify whether the modal wiil only be displayed inside the left boyd or the full screen */
+  /*Specify whether the modal wiil only be displayed inside the left body or the full screen */
   /*position: relative;*/
 }
 
@@ -410,7 +410,6 @@ width: 30px;
   width: 187px;
   height: 10px;
   margin-top: -3px;
-
 }
 .main_wrapper .home_wrapper .sub-nav  .author p span {
   font-family: 'Roboto';
@@ -625,17 +624,18 @@ top: 0;
 width: 100%;
 height: 100%;
 background: rgba(0, 0, 0, 0.5);
-transition: opacity .5s;
+transition: opacity 1s;
 z-index: 2;
 }
 .hidden.overlay{
 visibility: hidden;
 opacity: 0;
-transition: opacity .5s;
+transition: opacity 1s;
 }
 
 /*Modal styling proper*/
 .main_wrapper .card .modal{
+  background: #fff;
   position: fixed;
   left: 50%;
   top: 54%;
@@ -650,6 +650,10 @@ transition: opacity .5s;
   box-sizing: border-box;
   transition: .3s ease-out;
   cursor: initial !important;
+  z-index: 999999999;
+}
+.main_wrapper .modal_toggle {
+  cursor: pointer
 }
 .hidden.modal{
 visibility: hidden;
@@ -889,18 +893,18 @@ color: #26A69A;
 
 /*edit task body */
 .modal_content .ed-container {
-width: 581px;
+max-width: 581px;
 height: 142px;
 border: 1px solid rgba(0, 0, 0, 0.3);
 box-sizing: border-box;
 border-radius: 10px;
-margin-left: 20px;
+/* margin-left: 20px; */
 }
 .img{
   background-color: lightgrey
 }
 .ed-container p {
-width: 561px;
+/* width: 561px; */
 height: 130px;
 font-style: normal;
 font-weight: normal;
@@ -937,16 +941,22 @@ color: rgba(0, 0, 0, 0.8);
 margin-left: 28px;
 }
 /*add task modal with variable sizes */
-.main_wrapper .des .add .add_task.modal{
-width: 400px;
-height: 309px;
-background: #FFFFFF;
-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
-border-radius: 5px;  
-margin-top: 120px;
-margin-right: 100px;
-z-index: -2;
-/* You can add more styles here for the modal */
+.main_wrapper .modal_toggle .type-3{
+  max-width: 400px;
+  height: 309px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;  
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff !important;
+  z-index: 999999;
+  padding-bottom: 8px;
+}
+.main_wrapper .modal_toggle .type-3 .content{
+  padding: 8px;
 }
 .modal_content li {
 display: flex;
@@ -961,7 +971,7 @@ padding-top: 3px;
 .modal_content .edit-nav {
 display: flex;
 flex-direction: row;
-width: 621px;
+width: 100%;
 height: 42px;
 background: rgba(0, 0, 0, 0.1);
 align-content: center;
@@ -998,26 +1008,22 @@ color: #26A69A;
 
 /*edit task body */
 .modal_content .ed-container {
-width: 581px;
+width: 100%;
 height: 142px;
 border: 1px solid rgba(0, 0, 0, 0.3);
 box-sizing: border-box;
 border-radius: 10px;
-margin-left: 20px;
 }
 .img{
   background-color: lightgrey
 }
 .ed-container p {
-width: 561px;
 height: 130px;
 font-style: normal;
 font-weight: normal;
 font-size: 14px;
 line-height: 16px;
 color: rgba(0, 0, 0, 0.8);
-margin-left: 10px;
-
 }
 /*edit footer modal */
 .edit-foot {
@@ -1137,9 +1143,6 @@ border-radius: 50px;
 }
 .main_wrapper .home_wrapper  .right-body form {
 margin: 20px 0px 50px 0px;
-}
-.main_wrapper .home_wrapper  .right-body textarea{
-  
 }
 input[type="text"] {
 width: 250px;
