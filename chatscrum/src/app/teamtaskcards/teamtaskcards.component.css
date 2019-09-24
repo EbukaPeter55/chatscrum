@@ -346,7 +346,7 @@ margin-top: 14px;
 .main_wrapper .home_wrapper .left-body{
   flex: 3;
   padding: 50px 10px;
-  /*Specify whether the modal wiil only be displayed inside the left body or the full screen */
+  /*Specify whether the modal wiil only be displayed inside the left boyd or the full screen */
   /*position: relative;*/
 }
 
@@ -372,6 +372,7 @@ margin-top: -2px;
 color: #FF4D6D !important;
 }
 .main_wrapper .home_wrapper .left-body  .sub-navbar-2 {
+background: rgba(89, 187, 30, 0.1);
 
 border-radius: 9px 9px 0px 0px;
 }
@@ -399,7 +400,6 @@ margin-right: 18px;
 height: 30px;
 box-sizing: border-box;
 width: 30px;
-
 }
 .main_wrapper .home_wrapper .sub-nav .author  p{
   font-family: 'Roboto';
@@ -410,6 +410,7 @@ width: 30px;
   width: 187px;
   height: 10px;
   margin-top: -3px;
+
 }
 .main_wrapper .home_wrapper .sub-nav  .author p span {
   font-family: 'Roboto';
@@ -439,7 +440,8 @@ flex: 1;
 }
 .main_wrapper .home_wrapper .sub-nav .des > div img{
  width: 20px;
- height: 20px;                                            
+ height: 20px;  
+ cursor: pointer;                                          
 }
 
  
@@ -468,6 +470,7 @@ flex: 1;
   } 
   .cards .card .inner-card{
     box-sizing: border-box;
+    
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 8px;
     box-sizing: border-box;
@@ -478,8 +481,19 @@ flex: 1;
   }
   
   .cards .card  .title{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: #333333;
     text-align: center;
-    text-transform: capitalize;
+     }
+  .cards .card .title .bold-let {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: #333333;
+    
   }
   .cards .card .des{
     font-size: 14px;
@@ -502,8 +516,7 @@ flex: 1;
       border-radius: 100%;
       box-sizing: border-box;
    }
-  .sub-nav .sub.navbar.des .add img{
-      
+  .sub-nav .sub.navbar.des .add img{       
       width: 10px;
       height: 14px;
    }
@@ -563,6 +576,12 @@ flex: 1;
   }
   .cards .card .action li span{
     padding-right: 5px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 13px;
+    color: rgba(0, 0, 0, 0.5);
+
   }
    .cards .card .action li img{
       height: 15px;
@@ -624,18 +643,17 @@ top: 0;
 width: 100%;
 height: 100%;
 background: rgba(0, 0, 0, 0.5);
-transition: opacity 1s;
+transition: opacity .5s;
 z-index: 2;
 }
 .hidden.overlay{
 visibility: hidden;
 opacity: 0;
-transition: opacity 1s;
+transition: opacity .5s;
 }
 
 /*Modal styling proper*/
 .main_wrapper .card .modal{
-  background: #fff;
   position: fixed;
   left: 50%;
   top: 54%;
@@ -650,10 +668,6 @@ transition: opacity 1s;
   box-sizing: border-box;
   transition: .3s ease-out;
   cursor: initial !important;
-  z-index: 999999999;
-}
-.main_wrapper .modal_toggle {
-  cursor: pointer
 }
 .hidden.modal{
 visibility: hidden;
@@ -832,7 +846,6 @@ background-color: #20A098;
 top: 0;
 left: -32px;
 box-sizing: border-box;
-
 }
 /* The edit task modal width variable size */
 .main_wrapper .card .edit_task.modal{
@@ -893,18 +906,15 @@ color: #26A69A;
 
 /*edit task body */
 .modal_content .ed-container {
-max-width: 581px;
+width: 581px;
 height: 142px;
 border: 1px solid rgba(0, 0, 0, 0.3);
 box-sizing: border-box;
 border-radius: 10px;
-/* margin-left: 20px; */
-}
-.img{
-  background-color: lightgrey
+margin-left: 20px;
 }
 .ed-container p {
-/* width: 561px; */
+width: 561px;
 height: 130px;
 font-style: normal;
 font-weight: normal;
@@ -942,88 +952,109 @@ margin-left: 28px;
 }
 /*add task modal with variable sizes */
 .main_wrapper .modal_toggle .type-3{
-  max-width: 400px;
-  height: 309px;
-  background: #FFFFFF;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
-  border-radius: 5px;  
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: #fff !important;
-  z-index: 999999;
-  padding-bottom: 8px;
+max-width: 900px;
+width: 621px;
+height: 309px;
+background: #FFFFFF;
+box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+border-radius: 5px;  
+position: fixed;
+top: 59%;
+left: 50%;
+transform: translate(-50%, -50%);
+background: #fff !important;
+z-index: 999999;
+padding-bottom: 8px;
+
 }
-.main_wrapper .modal_toggle .type-3 .content{
-  padding: 8px;
+
+.main_wrapper .type-3.modal #cancel {
+position: absolute;
+ right: 8px;
+ top: 5px;
+ cursor: pointer;
+ font-size: 25px;
+ text-shadow: 1px 1px 1px rgba(0,0,0,.05);
+ color: #aaa;
+ height: 30px;
+ width: 30px;
+ border: 1px solid #eee;
+ border-radius: 100%;
+ padding: 0px 0px 5px 0px;
+ box-sizing: border-box;
+ text-align: center;
+ transition: .5s;
 }
+.main_wrapper .type-3 .modal #cancel:hover{
+border-color: #aaa;
+color: #222;
+transition: .5s;
+}
+
+
 .modal_content li {
 display: flex;
 flex-direction: row;
 }
 .modal_content div {
-font-weight: bold;
-font-size: 14px;
-color: #59BB1E;
-padding-top: 3px;
-}
-.modal_content .edit-nav {
-display: flex;
-flex-direction: row;
-width: 100%;
-height: 42px;
-background: rgba(0, 0, 0, 0.1);
-align-content: center;
-}
+  font-weight: bold;
+  font-size: 14px;
+  color: #59BB1E;
+  padding-top: 3px;
+  }
+  .type-3.modal_content .edit-nav {
+    display: flex;
+    flex-direction: row;
+    width: 621px;
+    height: 42px;
+    background: rgba(0, 0, 0, 0.1);
+    align-content: center;
+  
+  }
+    .type-3.modal .modal_content .edit-nav li .nam{
+      margin-top: 4px;
+      margin-left: 9px;
+      }
+      .type-3.modal .modal_content .edit-nav div .smal-dev {
+        font-family: 'roboto';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 12px;
+        color: #333333;
+        margin-top: -4px;
+        }
+        .type-3 .modal_content .edit-nav  li img {
+          width: 22px;
+          height: 22px;
+          box-sizing: border-box;
+          margin: 10px auto auto 20px;
+          }
+    
+          /*edit task body */
 
-.edit_task.modal .modal_content .edit-nav li .nam{
-margin-top: 4px;
-margin-left: 9px;
-}
-.edit_task.modal .modal_content .edit-nav div .smal-dev {
-font-family: 'roboto';
-font-style: normal;
-font-weight: normal;
-font-size: 10px;
-line-height: 12px;
-color: #333333;
-margin-top: -4px;
-}
-.edit_task.modal .modal_content .edit-nav  li img {
-width: 22px;
-height: 22px;
-box-sizing: border-box;
-margin: 10px auto auto 20px;
-}
-.modal_content p {
-margin-left: 20px;
-font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 14px;
-line-height: 16px;
-color: #26A69A;
-}
-
-/*edit task body */
-.modal_content .ed-container {
-width: 100%;
+textarea {
+width: 581px;
 height: 142px;
-border: 1px solid rgba(0, 0, 0, 0.3);
-box-sizing: border-box;
-border-radius: 10px;
-}
-.img{
-  background-color: lightgrey
-}
-.ed-container p {
-height: 130px;
 font-style: normal;
 font-weight: normal;
 font-size: 14px;
 line-height: 16px;
 color: rgba(0, 0, 0, 0.8);
+border: 1px solid rgba(0, 0, 0, 0.3);
+box-sizing: border-box;
+border-radius: 10px;
+text-align: left;
+margin-left: 20px;
+padding-left: 10px;
+padding-top: 10px;
+}
+ textarea {
+  resize: none;
+  outline: none;
+}
+.ed-container textarea::-webkit-input-placeholder {
+  
 }
 /*edit footer modal */
 .edit-foot {
@@ -1053,6 +1084,128 @@ margin-left: 28px;
 }
 /*End of add task modal */
 
+
+/*Chatscrum modal styling with variable size */
+.main_wrapper  .modal_toggle .chatscrum-1{
+width: 621px;
+height: 433px;
+position: fixed;
+background: #FFFFFF;
+box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+border-radius: 5px;
+margin-left: 90px;
+transform: translate(-50%, -50%);
+background: #fff !important;
+z-index: 999999;
+padding-bottom: 8px;
+font-family: 'roboto';
+}
+.modal_content .container-3 .header-3 #cancel {
+position: absolute;
+ right: 10px;
+ top: 37px;
+ cursor: pointer;
+ font-size: 25px;
+ text-shadow: 1px 1px 1px rgba(0,0,0,.05);
+ color: #aaa;
+ height: 30px;
+ width: 30px;
+ border: 1px solid #eee;
+ border-radius: 100%;
+ padding: 0px 0px 5px 0px;
+ box-sizing: border-box;
+ text-align: center;
+ transition: .5s;
+}
+.main_wrapper .chatscrum-1 .modal #cancel:hover{
+border-color: #aaa;
+color: #222;
+transition: .5s;
+}
+
+.body-2 #cancel {
+
+}
+.container-3 {
+font-family: 'roboto';
+margin-top: 30px;
+width: 621px;
+height: 433px;
+top: 0px;
+background: #FFFFFF;
+box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+border-radius: 5px;
+margin-left: 90px;
+}
+.chatscrum-2 {
+display: flex;
+justify-content: center;
+margin-top: 30px;
+}
+.header-3 p {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 21px;
+text-align: center;
+color: #26A69A;
+}
+.header-3 .last {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 12px;
+margin-right: 23px;
+color: #343434;
+
+    }
+   .chatscrum-1 .body-2 .statement-2 {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+      color: rgba(0, 0, 0, 0.8);
+      margin-left: 20px;
+   }
+.body-2 h2 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    color: #26A69A;
+    margin-left: 20px;
+}
+.body-2 p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba(0, 0, 0, 0.8);
+    margin-left: 20px;
+}
+.body-2 .footer-2 {
+  font-family: 'roboto';
+  font-size: 14px;
+  line-height: 17px;
+  margin-top: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+
+}
+
+
+ 
+/*End of chatscrum modal styling with variables */
 /*Style the scroll bar inside the modal*/
 .main_wrapper .home_wrapper .modal .timelines::-webkit-scrollbar{
 width: 5px;
@@ -1076,12 +1229,14 @@ border-radius: 50px;
 }
 .main_wrapper .home_wrapper .right-body {
   flex: 1;
+  width: 250px;
   min-width: 200px;
   max-width: 250px;
   height: 100%;
   background: #343434;
   padding: 20px;
   font-family: 'Roboto';
+  
 }
 .main_wrapper .home_wrapper .right-body  > div{
   width: 100%;   
@@ -1111,9 +1266,35 @@ border-radius: 50px;
   font-size: 14px;
   line-height: 16px;
   margin-top: -1px;
-  margin-left: 9px;
+  margin-left: 8px;
   color: #FFFFFF;                                                 
 }
+.main_wrapper .home_wrapper .right-body  .first-right div {
+margin-left: 8px;
+}
+.main_wrapper .home_wrapper  .right-body .second-right div {
+margin-left: 8px;
+}
+.main_wrapper .home_wrapper  .right-body .second-right {
+margin-top: 20px;
+margin-bottom: 20px;
+} 
+.main_wrapper .home_wrapper  .right-body .third-right div {
+margin-left: 8px;
+}
+.main_wrapper .home_wrapper  .right-body .third-right {
+margin-bottom: 20px;
+} 
+
+.main_wrapper .home_wrapper  .right-body .fourth-right div {
+margin-left: 8px;
+}
+.main_wrapper .home_wrapper  .right-body .fourth-right {
+margin-top: 20px;
+}
+
+.main_wrapper .home_wrapper  .right-body .third-right div
+
 .main_wrapper .home_wrapper  .right-body >  div .author {
   font-weight: bold;
   font-size: 14px;
@@ -1121,29 +1302,37 @@ border-radius: 50px;
   display: flex;
   align-items: center; 
   padding-left: 8px;   
+  
 }
 
 /*COlors For each author*/
 .main_wrapper .home_wrapper  .right-body .first-right .author{
-  color: #4DFFD4 !important;                                                             
+  color: #4DFFD4 !important;      
+  margin-left: 11px;
+
 }
 .main_wrapper .home_wrapper  .right-body .second-right .author{
-  color: #FF4D6D !important;                                                             
+  color: #FF4D6D !important;
+  margin-left: 11px;                                                             
 }
 .main_wrapper .home_wrapper  .right-body .third-right .author{
-  color: #59BB1E !important;                                                             
+  color: #59BB1E !important;  
+  margin-left: 11px;                                                           
 }
 .main_wrapper .home_wrapper  .right-body .fourth-right .author{
-  color: #4DFFD4 !important;                                                             
+  color: #4DFFD4 !important;
+  margin-left: 11px;                                                             
 }
 
 .main_wrapper .home_wrapper  .right-body  div .timeStamp{
  color:  rgba(255, 255, 255, 0.5) !important;
- font-size: 12px;                                                              
+ font-size: 12px;    
+ margin-left: 8px;                                                          
 }
 .main_wrapper .home_wrapper  .right-body form {
 margin: 20px 0px 50px 0px;
 }
+
 input[type="text"] {
 width: 250px;
 height: 50px;
@@ -1160,17 +1349,7 @@ padding-left: 10px;
   font-family: inherit;
   color: rgba(255, 255, 255, 0.5);
 }
-.main_wrapper .home_wrapper  .right-body form button{
-  padding: 10px 20px;
-  width: 30%;
-  border: none;
-  border-radius: 3px;
-  background-color: #222;
-  color: #ddd;
-  margin-top: 5px;
-  cursor: pointer;
 
-}
 .main_wrapper .home_wrapper  .right-body form button:hover{
 opacity: .8                                                           
 }
